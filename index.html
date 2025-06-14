@@ -6,7 +6,6 @@
     <title>Itim's Portfolio</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
 </head>
 
 <header id="header" class="header-home">
@@ -42,45 +41,58 @@
         <div class="title">
             <h3><a href="Portfolio.html">Portfolio</a></h3>
         </div>
-        <div id="work" class="content">
-            <div id="portfolio-row1">
-                <div class="portfolio">
-                    <video class="img" autoplay muted loop playsinline src="Videos/MarbleTemple.mp4"></video>
-                    <div class="portfolio-text">
-                        <h4 class="portfolio-title">The Marble Temple</h4>
-                        <p class="portfolio-content">Procedural Building</p>
-                    </div>
+
+        <div class="work-wrapper">
+            <div id="work" class="content">
+                <div id="portfolio-row1">
+                    <a href="marble-temple.html">
+                        <div class="portfolio">
+                            <video class="img" autoplay muted loop playsinline src="Videos/MarbleTemple.mp4"></video>
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-title">The Marble Temple</h4>
+                                <p class="portfolio-content">Procedural Building</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="chocolate-shop.html">
+                        <div class="portfolio">
+                            <img class="img" src="Photos/ChocolateShop.jpg" alt="">
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-title">Chocolate Shop</h4>
+                                <p class="portfolio-content">RBD Simulation</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="waterdrop-automaton.html">
+                        <div class="portfolio">
+                            <video class="img" autoplay muted loop playsinline src="Videos/WaterDropAutomaton.mp4"></video>
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-title">Water Drop Automaton</h4>
+                                <p class="portfolio-content">Procedural Animation</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="portfolio">
-                    <img class="img" src="Photos/ChocolateShop.jpg" alt="">
-                    <div class="portfolio-text">
-                        <h4 class="portfolio-title">Chocolate Shop</h4>
-                        <p class="portfolio-content">RBD Simulation</p>
-                    </div>
+                <div id="portfolio-row2">
+                    <a href="silent-helper.html">
+                        <div class="portfolio">
+                            <video class="img" autoplay muted loop playsinline src="Videos/SilentHelper.mp4"></video>
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-title">The Silent Helper</h4>
+                                <p class="portfolio-content">Live-Action Short Film</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="woodland-grave.html">
+                        <div class="portfolio">
+                            <video class="img" autoplay muted loop playsinline src="Videos/WoodlandGrave.mp4"></video>
+                            <div class="portfolio-text">
+                                <h4 class="portfolio-title">The Woodland Grave</h4>
+                                <p class="portfolio-content">Photogrammetry</p>
+                            </div>
+                        </div>
+                    </a>         
                 </div>
-                <div class="portfolio">
-                    <video class="img" autoplay muted loop playsinline src="Videos/WaterDropAutomaton.mp4"></video>
-                    <div class="portfolio-text">
-                        <h4 class="portfolio-title">Water Drop Automaton</h4>
-                        <p class="portfolio-content">Procedural Animation</p>
-                    </div>
-                </div>
-            </div>
-            <div id="portfolio-row2">
-                <div class="portfolio">
-                    <video class="img" autoplay muted loop playsinline src="Videos/SilentHelper.mp4"></video>
-                    <div class="portfolio-text">
-                        <h4 class="portfolio-title">The Silent Helper</h4>
-                        <p class="portfolio-content">Live-Action Short Film</p>
-                    </div>
-                </div>
-                <div class="portfolio">
-                    <video class="img" autoplay muted loop playsinline src="Videos/WoodlandGrave.mp4"></video>
-                    <div class="portfolio-text">
-                        <h4 class="portfolio-title">The Woodland Grave</h4>
-                        <p class="portfolio-content">Photogrammetry</p>
-                    </div>
-                </div>         
             </div>
         </div>
     </section>
@@ -103,3 +115,5 @@
     </div>
 </footer>
 </html>
+
+<script src="script.js"></script>
