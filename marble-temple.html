@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>The Marble Temple</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -24,10 +24,10 @@
 <body>
     <section id="work-area">
         <div id="video-wrapper">
-            <div style="padding:56.25% 0 0 0;position:relative;">
+            <div class="work-video-container">
                 <iframe src="https://player.vimeo.com/video/1091299917?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="The Marble Temple"></iframe>
+                title="The Marble Temple"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -47,9 +47,54 @@
                     Custom parameters were set up to easily adjust and fine-tune every aspect of the model throughout the production process.</p>
                 <p class="software">Houdini | Karma | Nuke</p>
             </div>
-        </div>
 
+            <div class="next-back-wrapper">
+                <a href="woodland-grave.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
+                </a>
+                <a href="chocolate-shop.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
+                </a>                
+            </div>
+        </div>
     </section>
-    
+
+    <section id="get-in-touch" class="section-p1">
+        <h3 class="feedback-title">Always open to constructive feedback!</h3>
+        <form class="form" id="marble-temple-feedback" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbwuqYpqd0arHNhoGyGINaxnuB90-3-8krHT-W_DBVzN48E1VAAGh_oW3KTm-TbrPjAM/exec" method="post">
+            <div id="input">
+                <div id="name-email">
+                    <input type="text" name="Name" placeholder="Name..." required>
+                    <input type="email" name="Email" placeholder="Email..." required>
+                </div>
+                <div id="message">
+                    <textarea name="Message" placeholder="Message..."></textarea>
+                </div>
+            </div>
+            <div id="submit">
+                <button class="btn2" type="submit" class="btn">Submit</button>
+            </div>
+            <span id="msg" style="display:none;"></span>
+        </form>
+    </section>
 </body>
+
+<div id="scroll-up">
+  <a href="#work-area" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
 </html>
+
+<script src="script.js"></script>

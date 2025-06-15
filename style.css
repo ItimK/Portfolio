@@ -73,7 +73,8 @@ footer{
   --font-content: 16px;
   --before-footer: 50px;
   --after-header: 230px;
-  --side-margin: 200px
+  --side-margin: 200px;
+  --form-padding: 0 200px 100px 200px;
 }
 
 /* --------------------------------- HOME --------------------------------- */
@@ -463,9 +464,12 @@ footer{
   color: #A67958;
 }
 
+.form{
+  padding: var(--form-padding);
+}
+
 #contact-form{
   width: 100%;
-  padding: 0 200px 100px 200px;
 }
 
 #name-email{
@@ -803,6 +807,7 @@ footer{
 /* --------------------------------- THE MARBLE TEMPLE --------------------------------- */
 
 #work-area{
+  width: 100%;
   display: flex;
   position: relative;
 }
@@ -813,21 +818,39 @@ footer{
   justify-content: center;
   align-items: flex-start;
   width: 65%;
+  padding: 90px 8% 90px 8%;
   margin-top: 80px;
 }
 
-#video-wrapper div{
-  width: 75%;
+.work-video-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-.work-BG{
+.work-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.work-BG {
   width: 35%;
   background-color: #F2EFE7;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .work-text-wrapper{
-  padding: 80px 100px 0px;
+  padding: 75px 100px 0px;
+  flex-shrink: 0; /* prevent shrinking */
 }
 
 .work-title{
@@ -842,23 +865,79 @@ footer{
   font-weight: 200;
   text-transform: uppercase;
   color: #A67958;
+  padding-bottom: 30px;
 }
 
 .text-title{
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 .text-content{
   font-size: 18px;
-  font-weight: 400;  
+  font-weight: 300;
+  padding-bottom: 30px;  
 }
 
 .software{
   font-size: 18px;
   font-weight: 400; 
-  color: #898989;  
+  color: #898989;
+  padding-bottom: 60px; 
+}
+
+.next-back-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 0 100px 10px;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.next-back-wrapper a{
+  text-decoration: none;
+}
+
+.btn3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #B9B4A8;
+  background-color: transparent;
+  cursor: pointer;
+  transition:  background-color border 0.3s ease;
+}
+
+.btn3:hover{
+  background-color: #B9B4A8;
+  border: none;
+}
+
+.btn3 i{
+  font-size: 18px;
+  color: #B9B4A8;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.btn3 i:hover{
+  color: #F2EFE7;
+}
+
+.feedback-title{
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#marble-temple-feedback{
+  width: 100%;
+  padding: var(--form-padding);
 }
 
 
