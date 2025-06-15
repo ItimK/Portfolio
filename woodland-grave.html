@@ -8,17 +8,43 @@
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
 
-<header id="header" class="header-page">
-    <a href="index.html">Itim Kongsakulvatnasook</a>
-    <div>
-        <ul id="nav-bar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="DemoReel.html">Demo Reel</a></li>
-            <li><a href="Portfolio.html">Porfolio</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </div>
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="DemoReel.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="dropdown-wrapper">
+            <div class="triangle"></div>
+            <ul id="dropdown-menu">
+                <li><a class="dropdown-list" href="">The Marble Temple</a></li>
+                <li><a class="dropdown-list" href="">Chocolate Shop</a></li>
+                <li><a class="dropdown-list" href="">Water Drop Automaton</a></li>
+                <li><a class="dropdown-list" href="">The Silent Helper</a></li>
+                <li><a class="dropdown-list" href="">The Woodland Grave</a></li>
+            </ul>
+        </div>
+    </section>
 </header>
 
 <body>
@@ -37,9 +63,6 @@
             <div class="work-text-wrapper">
                 <h3 class="work-title">The woodland grave</h3>
                 <p class="work-date">May, 2025</p>
-                <p class="text-title">Inspiration</p>
-                <p class="text-content"
-                    >Pixar’s Luxo Jr.</p>
                 <p class="text-title">Process</p>
                 <p class="text-content"
                     >Photogrammetry was used to capture detailed real-world references and generate high-quality 3D models. 
