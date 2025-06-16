@@ -100,6 +100,7 @@ footer{
   z-index: 0;
 }
 
+/* Header ------------------------ */
 #header-all{
   position: fixed;
   width: 100%;
@@ -111,8 +112,7 @@ footer{
   align-items: flex-end;
 }
 
-/* Header and nav-bar stay on top of the video */
-#header {
+#header { /* Header and nav-bar stay on top of the video */
   position: relative;
   width: 100%;
   height: var(--header-height);
@@ -235,6 +235,7 @@ footer{
   font-weight: 400 !important;
 }
 
+/* Hero ------------------------ */
 #hero{
   position: relative;
   z-index: 1;
@@ -280,6 +281,7 @@ footer{
   transform: translateY(-3px);
 }
 
+/* Home - Portfolio ------------------------ */
 .home-portfolios-container{
   display: flex;
   flex-wrap: wrap;
@@ -381,6 +383,7 @@ footer{
   margin: 0;  
 }
 
+/* Footer ------------------------ */
 #scroll-up{
   padding-top: 200px;
   display: flex;
@@ -439,7 +442,7 @@ footer{
 }
 
 /* --------------------------------- CONTACT --------------------------------- */
-
+/* Contact Lists ------------------------ */
 #contacts{
   background: #F2EFE7;
   padding-top: var(--header-height);
@@ -523,6 +526,7 @@ footer{
     color: #fff;  
 }
 
+/* Form ------------------------ */
 #get-in-touch{
   background: #E6E5E1;
 }
@@ -540,8 +544,8 @@ footer{
 
 #name-email{
   display: flex;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
+  gap: 10%;
 }
 
 #name-email input{
@@ -617,7 +621,7 @@ footer{
 /* --------------------------------- DEMO REEL --------------------------------- */
 
 #demoreel-container{
-  padding: 180px 300px 0px 300px;
+  padding: 180px 15% 0px;
 }
 
 #reel-container{
@@ -648,7 +652,7 @@ footer{
 }
 
 /* --------------------------------- RESUME --------------------------------- */
-
+/* Download Resume ------------------------ */
 #download-resume-container{
   display: flex;
   justify-content: center;
@@ -662,17 +666,13 @@ footer{
   text-decoration: none;
 }
 
+/* Skills ------------------------ */
 #skills{
   background-color: #E6E5E1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .skills-container{
   width: 100%;
-  display: flex;
-  flex-direction: column;
   padding: 50px var(--side-margin);
 }
 
@@ -689,12 +689,26 @@ footer{
   padding-bottom: 30px;
 }
 
+.program-container{
+  width: 300px;
+  height: fit-content;
+}
+
 .program-title{
   font-weight: 600;
   font-size: 22px;
 }
 
-.program-content{
+.program-content1{
+  width: 100%;
+  font-weight: 100;
+  font-size: 18px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.program-content2{
+  width: 100%;
   font-weight: 100;
   font-size: 18px;
   padding-top: 20px;
@@ -702,16 +716,19 @@ footer{
 }
 
 #program{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 80px;
   row-gap: 50px;
 }
 
+/* Word - Edu ------------------------ */
 #work-edu{
   display: flex;
 }
 
+/* Work ------------------------ */
 #work-experience{
   background-color: #F2EFE7;
   width: 60%;
@@ -757,13 +774,6 @@ footer{
   max-width: 500px;
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
-  height: 0;
-  overflow: hidden;
-}
 
 .video-wrapper iframe {
   position: absolute;
@@ -835,6 +845,7 @@ footer{
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 110px;
+  margin-bottom: 20px;
 }
 
 /* Education ------------------------ */
@@ -848,9 +859,10 @@ footer{
 .edu-container{
   padding-top: 50px;
   padding-right: var(--side-margin);
+  padding-left: 10%;
 }
 
-#MFA{
+.edu-wrapper{
   padding-bottom: 80px;
 }
 
@@ -1007,3 +1019,164 @@ footer{
 }
 
 
+/* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
+@media only screen and (max-width: 1459px){
+
+  /* --------------------------------- RESUME --------------------------------- */
+  /* Skills ------------------------ */
+  .skills-container{
+  width: 100%;
+  padding: 50px 10%;
+  }
+
+  .program-container{
+  width: 45%;
+  height: fit-content;
+  }
+  
+  #work-edu{
+  display: block;
+  }
+
+  /* Work ------------------------ */
+  #work-experience{
+    width: 100%;
+  }
+
+  .work-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10%;  
+  }
+
+  .yt-all{
+  justify-content: space-between;
+
+  flex-wrap: wrap; /* So they stack on smaller screens */
+  }
+
+  /* Education ------------------------ */
+  #education{
+    width: 100%;
+    display: block;
+  }
+
+  .edu-container{
+    padding: 50px 10%;
+  }
+
+  #MFA-BFA{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .edu-wrapper{
+    padding-bottom: 0px;
+  }
+
+  /* --------------------------------- CONTACT --------------------------------- */
+  .contact-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 150px;
+  gap: 50px;
+  }
+
+  /* --------------------------------- THE MARBLE TEMPLE --------------------------------- */
+  #work-area{
+  width: 100%;
+  display: block;
+  position: relative;
+  }
+
+  #video-wrapper{
+  width: 100%;
+  padding: 90px 15%;
+  }
+
+  .work-BG {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  }
+
+  .work-text-wrapper{
+  padding: 75px 15% 0px;
+  flex-shrink: 0; /* prevent shrinking */
+  }
+
+  .next-back-wrapper {
+  padding: 0 15% 10px;
+  }
+}
+
+/* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px){
+  .title{
+  padding: 100px 0 90px;
+  }
+
+  .portfolio{
+  max-width: 600px;
+  }
+
+  .home-portfolios-container{
+  gap: 20px;
+  }
+
+  .portfolios-container{
+  padding: 200px 150px 0;
+  gap: 20px;
+  }
+
+  /* --------------------------------- RESUME --------------------------------- */
+  /* Skills ------------------------ */  
+  .program-container{
+  width: 100%;
+  height: fit-content;
+  }
+
+   /* Work ------------------------ */
+  .yt-all{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap; /* So they stack on smaller screens */
+  }
+
+  .yt-content{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 100%; /* Increase this as needed */
+  }
+
+  .description-wrapper{
+    min-height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  /* --------------------------------- CONTACT --------------------------------- */ 
+  .form{
+    padding: 0 150px 100px;
+  }
+
+  #name-email{
+    display: block;
+  }
+
+  #name-email input{
+
+      margin-bottom: 30px;
+  }
+}
