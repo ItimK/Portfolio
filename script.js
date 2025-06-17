@@ -129,6 +129,18 @@ if (form6) {
 }
 
 
+// --------------------- SIDE MENU ---------------------
+
+var sidemenu = document.getElementById("nav-bar");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "-400px";
+}
+
+
 
 
 

@@ -49,9 +49,9 @@ p {
   margin: 40px 0;
 }
 
-.title{
+/* .title{
   padding-bottom: 65px;
-}
+} */
 
 body{
   width: 100%;
@@ -237,10 +237,9 @@ footer{
 
 /* Hero ------------------------ */
 #hero{
-  position: relative;
   z-index: 1;
   text-align: left;
-  padding-left: 200px;
+  padding-left: 15%;
   top: 40%;
   position: absolute;
 }
@@ -329,6 +328,7 @@ footer{
   text-decoration: none;
   color: #A67958;
   transition: color 0.3s ease;
+  text-align: center;
 }
 
 .title h3 a:hover{
@@ -1178,5 +1178,132 @@ footer{
   #name-email input{
 
       margin-bottom: 30px;
+  }
+}
+
+/* ------------------------------------------------------- For Ipad (768) ------------------------------------------------------- */
+
+#header i{
+  display: none;
+}
+
+
+@media only screen and (max-width: 940px){
+
+  #hero h1{
+    font-size: 35px;
+  }
+  
+  #hero h3{
+    font-size: 25px;
+    margin-top: -10px;
+  }
+  
+  #hero-buttons {
+    margin-top: 30px;
+  }
+  
+  .btn1{
+    font-size: 16px;
+  }
+
+  .title{
+    padding: 60px 0 55px;
+    font-size: 20px;
+  }
+  
+  .title h3 a{
+    font-size: 20px;
+  }
+
+  #scroll-up{
+    padding-top: 120px;
+  }
+
+  #scroll-up a{
+    font-size: 20px;
+  }
+
+  #projects h3{
+    font-size: 20px;
+  }
+
+  .project-list{
+    font-size: 16px;
+  }
+
+  #nav-bar i{
+    color: #DDD7C9;
+  }
+
+   #header i{
+    display: block;
+    color: #DDD7C9;
+    font-size: 20px;
+  }
+
+  #nav-bar{
+    background-color: #5B4532;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    padding-top: 80px;
+    display: block;
+    transition: right 0.3s ease;
+  }
+
+  #nav-bar li {
+    margin: 50px;
+  }
+
+  #nav-bar li a{
+    font-size: 25px;
+  }
+
+  #nav-bar i{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #dropdown-wrapper{
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------------------- 500 ------------------------------------------------------- */
+
+@media only screen and (max-width: 500px){
+
+  #header{
+    padding: 25px 10%;
+  }
+
+  #hero{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0 11%;
+  }
+
+  #hero-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  }
+
+  .btn1{
+    font-size: 20px;
   }
 }
