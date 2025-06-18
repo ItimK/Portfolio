@@ -690,7 +690,7 @@ footer{
 }
 
 .program-container{
-  width: 300px;
+  width: 320px;
   height: fit-content;
 }
 
@@ -814,30 +814,31 @@ footer{
   position: static;
 }
 
+.play-button i{
+  position: absolute;
+  transform: translate(-3px, -10px);
+  font-size: 65px;
+  color: red;
+  pointer-events: none;
+}
+
 .play-button{
   position: absolute;
+  width: 65px;
+  height: 65px;
   top: 50%;
   left: 50%;
-  /* transform: translate(-40%, 75%); */
+  transform: translate(-50%, -30%);
 }
 
 .BG{
   position: absolute;
-  transform: translate(-50%, 100px); 
+  transform: translateX(5px); 
   width: 40px;
   height: 40px;
   background-color: white;
+  /* z-index: 1; */
   
-}
-
-.play-button i{
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  transform: translate(-50%, 85px);
-  font-size: 65px;
-  color: red;
-  pointer-events: none;
 }
 
 .description-wrapper{
@@ -1013,11 +1014,6 @@ footer{
   text-align: center;
 }
 
-#marble-temple-feedback{
-  width: 100%;
-  padding: var(--form-padding);
-}
-
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
@@ -1117,7 +1113,7 @@ footer{
 
 /* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1040px){
   .title{
   padding: 100px 0 90px;
   }
@@ -1273,6 +1269,20 @@ footer{
   #dropdown-wrapper{
     display: none;
   }
+
+  .form{
+  padding: 0 80px 100px;
+  }
+
+  #name-email input{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+  #message textarea{
+    padding: 10px 15px;
+    font-size: 16px;
+  }  
 }
 
 
@@ -1294,6 +1304,15 @@ footer{
   padding: 0 11%;
   }
 
+  #hero h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #hero h3{
+    padding-bottom: 20px;
+  }
+
   #hero-buttons {
   display: flex;
   flex-direction: column;
@@ -1306,4 +1325,17 @@ footer{
   .btn1{
     font-size: 20px;
   }
+
+  #demoreel-container{
+  padding: 180px 10% 0px;
+  }
+}
+
+/* ------------------------------------------------------- 375 ------------------------------------------------------- */
+
+@media only screen and (max-width: 425px){
+
+  .form{
+  padding: 0 60px 100px;
+  }  
 }
