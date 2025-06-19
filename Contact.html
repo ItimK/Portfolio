@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="DemoReel.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a class="active" href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+        <div id="dropdown-wrapper">
+            <div class="triangle"></div>
+            <ul id="dropdown-menu">
+                <li><a class="dropdown-list" href="">The Marble Temple</a></li>
+                <li><a class="dropdown-list" href="">Chocolate Shop</a></li>
+                <li><a class="dropdown-list" href="">Water Drop Automaton</a></li>
+                <li><a class="dropdown-list" href="">The Silent Helper</a></li>
+                <li><a class="dropdown-list" href="">The Woodland Grave</a></li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section id="contacts">
+        <div class="contact-list">
+            <div id="email">
+                <ul>
+                    <a href="mailto:itim.kongs@gmail.com" class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <li class="contact-title">Email</li>
+                    <li class="contact-info"><a href="mailto:itim.kongs@gmail.com">itim.kongs@gmail.com</a></li>
+                </ul>
+            </div>
+            <div id="phone">
+                <ul>
+                    <a href="#" onclick="copyPhoneNumber(event)" class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>                    
+                    <li class="contact-title">Phone</li>
+                    <li class="contact-info"><a href="#" onclick="copyPhoneNumber(event)">+1 (912) 272-2019</a></li>
+                </ul>
+            </div>
+            <div id="linked-in">
+                <ul>
+                    <a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/" class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>                         
+                    <li class="contact-title">LinkedIn</li>
+                    <li class="contact-info"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/">Itim Kongsakulvatanasook</a></li>
+                </ul>
+            </div>
+            <div id="location">
+                <ul>
+                    <li class="contact-icon2"><i class="fa-solid fa-location-dot"></i></li>                      
+                    <li class="contact-title">Location</li>
+                    <li class="contact-info">Savannah, GA, United States</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-in-touch" class="section-p1">
+        <h3 class="title">Let’s get in touch!</h3>
+        <form class="form" id="contact-form" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzlOPp4TP8VyNhG8JOegsMgSXaFH0Mbe_TXaaCHSgoMSofsENKjXIYBv5tMA-c_7r1R/exec" method="post">
+            <div id="input">
+                <div id="name-email">
+                    <input type="text" name="Name" placeholder="Name..." required>
+                    <input type="email" name="Email" placeholder="Email..." required>
+                </div>
+                <div id="message">
+                    <textarea name="Message" placeholder="Message..."></textarea>
+                </div>
+            </div>
+            <div id="submit">
+                <button class="btn2" type="submit" class="btn">Submit</button>
+            </div>
+            <span id="msg" style="display:none;"></span>
+        </form>
+        
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#contacts" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+</html>
+
+<script src="script.js"></script>
