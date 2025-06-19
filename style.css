@@ -1346,4 +1346,9 @@ footer{
   #hero h3{
   font-size: 20px;
   }  
+  
+  .feedback-title{
+  font-size: 25px;
+  padding: 80px 50px;
+  }
 }
