@@ -1338,4 +1338,12 @@ footer{
   .form{
   padding: 0 60px 100px;
   }  
+
+  #hero h1{
+  font-size: 25px;
+  }
+  
+  #hero h3{
+  font-size: 20px;
+  }  
 }
