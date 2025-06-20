@@ -893,12 +893,22 @@ footer{
 
 #video-wrapper{
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: flex-start;
   width: 65%;
   padding: 90px 8% 90px 8%;
   margin-top: 80px;
+}
+
+.breakdown{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 30px;
+}
+
+.breakdown h3{
+  color: #A67958;
 }
 
 .work-video-container{
@@ -1283,6 +1293,10 @@ footer{
     padding: 10px 15px;
     font-size: 16px;
   }  
+
+  .breakdown h3{
+    font-size: 25px;
+  }
 }
 
 
@@ -1342,13 +1356,21 @@ footer{
   #hero h1{
   font-size: 25px;
   }
-  
+
   #hero h3{
   font-size: 20px;
   }  
-  
+
   .feedback-title{
   font-size: 25px;
   padding: 80px 50px;
+  }
+
+  .breakdown h3{
+    font-size: 20px;
+  }
+
+  .breakdown{
+    padding: 40px 0 20px;
   }
 }
