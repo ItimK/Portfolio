@@ -928,6 +928,17 @@ footer{
   border: 0;
 }
 
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .work-BG {
   width: 35%;
   background-color: #F2EFE7;
