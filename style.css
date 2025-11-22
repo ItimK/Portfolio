@@ -907,6 +907,11 @@ footer{
   padding: 60px 0 30px;
 }
 
+#video-wrapper .breakdown:first-child {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
 .breakdown h3{
   color: #A67958;
 }
@@ -979,6 +984,25 @@ footer{
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 30px;  
+}
+
+.text-content-list {
+  padding-left: 0;
+  margin-top: 0;
+  list-style-position: outside;
+}
+
+.text-content-list li {
+  margin-left: 20px;
+  padding-bottom: 15px;
+}
+
+.text-content-list li strong {
+  font-weight: 500;
+}
+
+.text-content-list li:last-child {
+  padding-bottom: 30px;
 }
 
 .software{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Drop Automaton</title>
+    <title>AI Style Transfer Tool</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -45,44 +45,71 @@
 <body>
     <section id="work-area">
         <div id="video-wrapper">
+            <div class="breakdown first-breakdown">
+                <h3>Style Transfer Tool</h3>
+            </div>
             <div class="work-video-container">
-                <iframe src="https://player.vimeo.com/video/1093405702?h=4c35f10242&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1&amp;autoplay=1"
+                <iframe src="https://player.vimeo.com/video/1139696066?h=68bd523347&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=0" 
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                title="Water Drop Automaton"></iframe>
+                title="StyleTransfer_Demo"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
 
             <div class="breakdown">
-                <h3>Breakdown</h3>
+                <h3>Sketch To Render Tool</h3>
             </div>
-
             <div class="work-video-container">
-                <iframe src="https://player.vimeo.com/video/1137120613?h=55450ba91f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Water Drop Automaton - Breakdown"></iframe>
+                <iframe src="https://player.vimeo.com/video/1139696048?h=15f7f86726&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                title="SketchToRender_Demo"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
         <div class="work-BG">
             <div class="work-text-wrapper">
-                <h3 class="work-title">Water Drop Automaton</h3>
-                <p class="work-date">May, 2025</p>
-                <p class="text-title">Inspiration</p>
+                <h3 class="work-title">AI Style Transfer Tool</h3>
+                <p class="work-date">October, 2025</p>
+                <p class="text-title">Overview</p>
                 <p class="text-content"
-                    >Kinetic Wave Toy Sculpture by Leandro Salerno</p>
-                <p class="text-title">Process</p>
-                <p class="text-content"
-                    >Houdini offers powerful tools for automating workflows, which greatly simplified the process in this project. 
-                    SOP nodes like Intersection Analysis and point functions played a key role, helping to detect overlaps and control object placement with precision and efficiency.</p>
-                <p class="software">Houdini | Karma | Nuke</p>
+                    >This Python-based AI tool was initially developed during a 2-week SCADpro x Electronic Arts Design Challenge 
+                    to solve a critical production challenge: maintaining consistent art style across multiple concept pieces. 
+                    As part of the programming team, I created custom style transfer tools that allow artists to apply visual characteristics 
+                    from reference images to new content, ensuring cohesive art direction throughout the production pipeline. 
+                    I have continued to develop and expand the tool's capabilities following the challenge's conclusion.</p>
+
+                <p class="text-title">AI Models and Tools</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><strong>VGG 19:</strong> A Pre-trained AI model used to extract semantic features from images at multiple levels of abstraction 
+                        including edges and color, textures and patterns</li>
+                    <li class="text-content"><strong>AdaIN (Adaptive Instance Normalization):</strong> A neural style transfer technique that enables real-time transfer 
+                        of artistic styles between images. This technique is widely used to maintain consistent visual aesthetics across multiple pieces of content, 
+                        making it ideal for concept art pipelines where style consistency is critical.</li>
+                    <li class="text-content"><strong>Stable Diffusion XL (SDXL):</strong> Large-scale text-to-image diffusion model for high-quality 1024x1024 generation</li>
+                    <li class="text-content"><strong>IP-Adapter:</strong> It transfers style and color from reference paintings by encoding them through CLIP vision 
+                        and injecting visual characteristics into the diffusion process. This captures artistic qualities like brushstrokes, color palettes, and mood</li>
+                    <li class="text-content"><strong>Softedge ControlNet:</strong> Preserves sketch composition by detecting edges with Gaussian blur, 
+                        creating soft boundaries that produce natural, painterly results without harsh artifacts.</li>
+                </ul>
+
+                <p class="text-title">Key Features</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><strong>Style-Transfer Tool:</strong> Transform images by applying artistic styles from reference photos, 
+                        with detailed control over the placement and intensity of effects. Using luminance masks, users can independently adjust how strongly 
+                        the style appears in bright areas, midtones, and shadows, and also assign different reference images to each tonal range for complex, 
+                        layered artistic results.</li>
+                    <li class="text-content"><strong>Sketch-to-Render Tool:</strong> Converts hand-drawn sketches into stylized images using ControlNets and Stable Diffusion XL. 
+                        It intelligently identifies and preserves objects from the sketches through shape-based computer vision and renders them with 
+                        appropriate colors and artistic style based on a reference image.</li>
+                </ul>
+                <p class="software">HP AI Studio | Python | Hugging Face</p>
             </div>
 
             <div class="next-back-wrapper">
-                <a href="chocolate-shop.html">
+                <a href="waterdrop-automaton.html">
                     <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
                 </a>
-                <a href="ai-style-transfer.html">
+                <a href="winterScatter-tool.html">
                     <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
                 </a>                
             </div>
@@ -91,8 +118,7 @@
 
     <section id="get-in-touch" class="section-p1">
         <h3 class="feedback-title">Always open to constructive feedback!</h3>
-        <form class="form" id="waterdrop-feedback" name="submit-to-google-sheet" 
-            action="https://script.google.com/macros/s/AKfycbziPNhc3-wzhXe4yHNvI1Y6taJ9gj5d82jgzv9JAq-ncpRVEGB530MYSgkqPRTWRkXF/exec" method="post">
+        <form class="form" id="marble-temple-feedback" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbwuqYpqd0arHNhoGyGINaxnuB90-3-8krHT-W_DBVzN48E1VAAGh_oW3KTm-TbrPjAM/exec" method="post">
             <div id="input">
                 <div id="name-email">
                     <input type="text" name="Name" placeholder="Name..." required>
