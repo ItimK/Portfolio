@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>GroupThesis</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -34,7 +34,7 @@
                     </div>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="Resume.html">Resume</a></li>
-                    <li><a class="active" href="Contact.html">Contact</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
             </div>
@@ -44,68 +44,30 @@
 </header>
 
 <body>
-    <section id="contacts">
-        <div class="contact-list">
-            <div id="email">
-                <ul>
-                    <a href="mailto:itim.kongs@gmail.com" class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <li class="contact-title">Email</li>
-                    <li class="contact-info"><a href="mailto:itim.kongs@gmail.com">itim.kongs@gmail.com</a></li>
-                </ul>
+    <section class="blog">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Group Thesis</h1>
+        </div>
+        <div class="week-container" id="week-01">
+            <div id="week-title">
+                <h4 class="week-num">Week 01</h4>
+                <h4 class="week-detail">Project kickoff - Introduction and discusstion of Roles</h4>
+                <h4 class="week-detail">05 Jan 2026</h4>
             </div>
-            <div id="phone">
-                <ul>
-                    <a href="#" onclick="copyPhoneNumber(event)" class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>                    
-                    <li class="contact-title">Phone</li>
-                    <li class="contact-info"><a href="#" onclick="copyPhoneNumber(event)">+1 (912) 272-2019</a></li>
-                </ul>
+            <div id="blog-content-container">
+                <p class="blog-content">Discuss roles and responsibilities of each team members</p>
+                <p class="blog-content">Create timeline/goals for each individual's research</p>
+
             </div>
-            <div id="linked-in">
-                <ul>
-                    <a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/" class="contact-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>                         
-                    <li class="contact-title">LinkedIn</li>
-                    <li class="contact-info"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/">Itim Kongsakulvatanasook</a></li>
-                </ul>
-            </div>
-            <div id="location">
-                <ul>
-                    <li class="contact-icon2"><i class="fa-solid fa-location-dot"></i></li>                      
-                    <li class="contact-title">Location</li>
-                    <li class="contact-info">Savannah, GA, United States</li>
-                </ul>
-            </div>
+
         </div>
     </section>
 
-    <section id="get-in-touch" class="section-p1">
-        <h3 class="title">Let’s get in touch!</h3>
-        <form class="form" id="contact-form" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzlOPp4TP8VyNhG8JOegsMgSXaFH0Mbe_TXaaCHSgoMSofsENKjXIYBv5tMA-c_7r1R/exec" method="post">
-            <div id="input">
-                <div id="name-email">
-                    <input type="text" name="Name" placeholder="Name..." required>
-                    <input type="email" name="Email" placeholder="Email..." required>
-                </div>
-                <div id="message">
-                    <textarea name="Message" placeholder="Message..."></textarea>
-                </div>
-            </div>
-            <div id="submit">
-                <button class="btn2" type="submit" class="btn">Submit</button>
-            </div>
-            <span id="msg" style="display:none;"></span>
-        </form>
-        
-    </section>
+    
 </body>
 
 <div id="scroll-up">
-  <a href="#contacts" title="Back to Top">
+  <a href="#blog-title-container" title="Back to Top">
     <i class="fa-solid fa-angles-up"></i>
   </a>
 </div>  
@@ -119,6 +81,7 @@
         <h5>Itim Kongsakulvatanasook<h5>
     </div>
 </footer>
+
 </html>
 
 <script src="script.js"></script>
