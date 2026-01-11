@@ -1062,6 +1062,7 @@ footer{
 /* --------------------------------- BLOG --------------------------------- */
 .blog{
   padding-top: 130px;
+  scroll-margin-top: 0
 }
 
 #blog-title-container{
@@ -1071,10 +1072,112 @@ footer{
 .blog-title{
   text-align: center;
   font-size: 40px;
+  line-height: 1.4;
+  padding-bottom: 20px;
+}
+
+.blog-video-container {
+  background-color: #E6E5E1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.blog-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 0 20px;
+}
+
+.blog-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Blog Layout - Two Column */
+.blog-layout-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.blog-left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.previs-title {
+  color: #A67958;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.concept-section {
+  margin-bottom: 20px;
+}
+
+.concept-title {
+  color: #A67958;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.concept-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.concept-list li {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.concept-list li strong {
+  font-weight: 500;
+  color: #A67958;
+}
+
+/* Update existing blog-video-container for this layout */
+.blog-left-column .blog-video-container {
+  background-color: transparent;
+  padding: 0;
+}
+
+.week-date{
+  font-size: 30px;
+  text-align: center;
 }
 
 #week-01{
   background-color: #E6E5E1;
+}
+
+/* Content section outside beige background */
+.blog-content-section {
+  padding: 80px var(--side-margin) 0;
 }
 
 #week-title{
@@ -1099,11 +1202,176 @@ footer{
 }
 
 .blog-content{
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
 }
 
+/* Mood Board Grid */
+.mood-board-grid {
+  column-count: 4;
+  column-gap: 10px;
+  margin-top: 30px;
+}
+
+.mood-board-grid img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: block;
+  break-inside: avoid;
+}
+
+/* Reference Section */
+
+.reference-section {
+  background-color: #E6E5E1;
+  width: 100%;
+  padding: 80px var(--side-margin); 
+  margin: 100px 0 0 0;
+}
+
+/* Override week-title padding in reference section */
+.reference-section #week-title {
+  padding-bottom: 0px;
+}
+
+.reference-layout-section {
+  margin-top: 30px;
+}
+
+
+.reference-layout-section + .reference-layout-section {
+  margin-top: 60px; /* Extra space between Layout and FX sections */
+}
+
+.reference-columns + .reference-columns {
+  margin-top: 40px; /* Space between rows */
+}
+
+.reference-columns {
+  display: flex;
+  gap: 100px;
+  padding-top: 20px;
+}
+
+.reference-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reference-column-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #222;
+  text-align: left;
+}
+
+.reference-images {
+  padding-top: 30px;
+  column-count: 2; 
+  column-gap: 10px;
+}
+
+/* Single video in a column - full width */
+.reference-images video:only-child {
+  column-span: all;
+  max-width: 100%;
+}
+
+.reference-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+  break-inside: avoid; 
+}
+
+.reference-images video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+  break-inside: avoid;
+}
+
+
+.shot-breakdown-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.shot-breakdown-image img {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* AI Generation Section */
+#AI-generation {
+  margin-top: 60px;
+}
+
+#AI-generation .week-detail {
+  margin-bottom: 40px;
+}
+
+.ai-columns {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.ai-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input and Result side by side */
+.ai-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.ai-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-item img,
+.ai-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ai-label {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.ai-prompt {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  color: #666;
+  margin: 0;
+}
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
@@ -1196,10 +1464,43 @@ footer{
   flex-shrink: 0; /* prevent shrinking */
   }
 
+    /* --------------------------------- NYC BLOG --------------------------------- */
   .next-back-wrapper {
   padding: 0 15% 10px;
   }
+
+    .blog-content-section {
+    padding: 80px 10% 0;
+  }
+
+  .week-container {
+    padding: 50px 10%;
+  }
+
+  .reference-section {
+    padding: 80px 10%;
+  }
+
+  .reference-columns {
+    gap: 60px;
+  }
+
+  .shot-breakdown-image img {
+    max-width: 1000px;
+  }
+
+  /* AI Generation */
+  .ai-columns {
+    gap: 50px;
+  }
+
+  .ai-row {
+    gap: 15px;
+  }
 }
+
+
+
 
 /* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
 
@@ -1270,6 +1571,99 @@ footer{
   #name-email input{
 
       margin-bottom: 30px;
+  }
+
+  /* Blog Layout */
+  .blog-layout-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .blog-left-column,
+  .blog-right-column {
+    width: 100%;
+  }
+
+  .previs-title {
+    font-size: 24px;
+  }
+
+  .concept-title {
+    font-size: 18px;
+  }
+
+  /* --------------------------------- NYC BLOG --------------------------------- */
+  /* Blog Content */
+  .blog-content-section {
+    padding: 60px 100px 0;
+  }
+
+  .week-container {
+    padding: 50px 100px;
+  }
+
+  .week-num {
+    font-size: 35px;
+  }
+
+  .week-detail {
+    font-size: 18px;
+  }
+
+  /* Mood Board */
+  .mood-board-grid {
+    column-count: 3;
+    column-gap: 12px;
+  }
+
+  .mood-board-grid img {
+    margin-bottom: 12px;
+  }
+
+  /* Reference Section */
+  .reference-section {
+    padding: 60px 100px;
+  }
+
+  .reference-columns {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .reference-images {
+    column-count: 2;
+  }
+
+  .shot-breakdown-image img {
+    max-width: 100%;
+  }
+
+  /* AI Generation */
+  #AI-generation {
+    margin-top: 50px;
+  }
+
+  #AI-generation .week-detail {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .ai-columns {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .ai-row {
+    gap: 20px;
+  }
+
+  .ai-label {
+    font-size: 17px;
+  }
+
+  .ai-prompt {
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -1383,6 +1777,90 @@ footer{
   .breakdown h3{
     font-size: 25px;
   }
+  
+  /* --------------------------------- NYC BLOG --------------------------------- */
+  /* Blog Content */
+  .blog-title {
+    font-size: 30px;
+  }
+
+  .week-date {
+    font-size: 24px;
+  }
+
+  .blog-content-section {
+    padding: 50px 80px 0;
+  }
+
+  .week-container {
+    padding: 40px 80px;
+  }
+
+  .week-num {
+    font-size: 30px;
+  }
+
+  .week-detail {
+    font-size: 16px;
+  }
+
+  .blog-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .previs-title {
+    font-size: 22px;
+  }
+
+  .concept-title {
+    font-size: 16px;
+  }
+
+  /* Mood Board */
+  .mood-board-grid {
+    column-count: 2;
+  }
+
+  /* Reference Section */
+  .reference-section {
+    padding: 50px 80px;
+  }
+
+  .reference-columns {
+    gap: 40px;
+  }
+
+  .reference-images {
+    column-count: 2;
+  }
+
+  /* AI Generation */
+  #AI-generation {
+    margin-top: 40px;
+  }
+
+  #AI-generation .week-detail {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .ai-columns {
+    gap: 40px;
+  }
+
+  .ai-row {
+    gap: 15px;
+  }
+
+  .ai-label {
+    font-size: 16px;
+  }
+
+  .ai-prompt {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 
@@ -1440,6 +1918,109 @@ footer{
     width: 100%;
     padding: 50px 50px;
   }
+
+  /* Blog Content */
+  .blog-title {
+    font-size: 28px;
+  }
+
+  .week-date {
+    font-size: 20px;
+  }
+
+  .blog-content-section {
+    padding: 40px 50px 0;
+  }
+
+  .week-container {
+    padding: 40px 50px;
+  }
+
+  .week-num {
+    font-size: 25px;
+  }
+
+  .week-detail {
+    font-size: 14px;
+  }
+
+  .blog-content {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .previs-title {
+    font-size: 20px;
+  }
+
+  .concept-title {
+    font-size: 16px;
+  }
+
+  .blog-video-wrapper {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  /* Mood Board */
+  .mood-board-grid {
+    column-count: 1;
+    margin-top: 20px;
+  }
+
+  .mood-board-grid img {
+    margin-bottom: 10px;
+  }
+
+  /* Reference Section */
+  .reference-section {
+    padding: 40px 50px;
+  }
+
+  .reference-layout-section {
+    margin-top: 20px;
+  }
+
+  .reference-columns {
+    gap: 30px;
+  }
+
+  .reference-images {
+    column-count: 1;
+    padding-top: 20px;
+  }
+
+    /* AI Generation */
+  #AI-generation {
+    margin-top: 30px;
+  }
+
+  #AI-generation .week-detail {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .ai-columns {
+    gap: 30px;
+  }
+
+  .ai-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ai-label {
+    font-size: 15px;
+  }
+
+  .ai-prompt {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .shot-breakdown-image {
+    margin-top: 20px;
+  }
 }
 
 /* ------------------------------------------------------- 375 ------------------------------------------------------- */
@@ -1478,6 +2059,86 @@ footer{
   .week-container{
     width: 100%;
     padding: 50px 30px;
+  }
+
+
+  /* --------------------------------- NYC BLOG --------------------------------- */
+  /* Blog Content */
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .week-date {
+    font-size: 18px;
+  }
+
+  .blog-content-section {
+    padding: 30px 30px 0;
+  }
+
+  .week-container {
+    padding: 30px 30px;
+  }
+
+  .week-num {
+    font-size: 22px;
+  }
+
+  .week-detail {
+    font-size: 14px;
+  }
+
+  .blog-content {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .previs-title {
+    font-size: 18px;
+  }
+
+  .concept-title {
+    font-size: 15px;
+  }
+
+  /* Reference Section */
+  .reference-section {
+    padding: 30px 30px;
+  }
+
+  .reference-columns {
+    gap: 25px;
+  }
+
+    /* AI Generation */
+  #AI-generation {
+    margin-top: 25px;
+  }
+
+  #AI-generation .week-detail {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .ai-columns {
+    gap: 25px;
+  }
+
+  .ai-column {
+    gap: 15px;
+  }
+
+  .ai-row {
+    gap: 15px;
+  }
+
+  .ai-label {
+    font-size: 14px;
+  }
+
+  .ai-prompt {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
