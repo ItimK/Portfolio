@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCADxNYC-Week01</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="DemoReel.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 1</h1>
+            <h4 class="week-date">05 Jan 2026</h4>
+        </div>
+
+        <!-- -------------------------------- Gaussian Splat -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Explore Gaussian Splat with Simulation</h4>
+            </div>
+            
+            <div class="reference-layout-section">
+                <p class="blog-content">Purpose: Explore how simulation techniques in Houdini can be applied to Gaussian Splat assets, 
+                    and evaluate the end-to-end Gaussian Splat creation pipeline—from data capture to simulation-driven refinement and rendering.</p>
+                <h4 class="week-detail">1. Export Splat Data</h4>
+                
+                <div class="reference-columns">
+                    <!-- Column 1 -->
+                    <div class="reference-column">
+                        <p class="blog-content">RealityScan: Align photos and export in COLMAP format - when exporting in COLMAP, 
+                            camera poses & intrinsics, sparse point clouds and original images will be exported </p>
+                        <div class="reference-images">
+                            <img src="Photos/VFX775/VFX775_W01_RS_01.png" alt="">
+                            <img src="Photos/VFX775/VFX775_W01_RS_02.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="reference-column">
+                        <p class="blog-content">Lichtfeld: Export full data splat (.ply) to be import into Houdini</p>
+                        <div class="reference-images">
+                            <img src="Photos/VFX775/VFX775_W01_LF_01.png" alt="">
+                            <img src="Photos/VFX775/VFX775_W01_LF_02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reference-layout-section">
+                <h4 class="week-detail">2. Simulation Test in Houdini</h4>
+                
+                <div class="reference-columns">
+                    <!-- Column 1 - Row 1 -->
+                    <div class="reference-column">
+                        <p class="blog-content">Import a Splat file and retrieve splat data using </p>
+                        <div class="reference-images">
+                            <div class="video-item">
+                                <img src="Photos/VFX775/VFX775_W01_Setting_01.png" alt="Closeup 1">
+                                <p class="blog-content">Check that gaussion splat data is imported correctly, such as f_d, f_rest</p>
+                            </div>
+                            
+                            <img src="Photos/VFX775/VFX775_W01_Setting_02.png" alt="Closeup 2">
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2 - Row 1 -->
+                    <div class="reference-column">
+                        <p class="blog-content">Test Render</p>
+                        <div class="reference-images">
+                            <img src="Photos/VFX775/VFX775_W01_Hou_01.jpeg" alt="Closeup 1">
+                            <img src="Photos/VFX775/VFX775_W01_Hou_02.jpg" alt="Closeup 2">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reference-columns">
+                    <!-- Column 1 - Row 2 -->
+                    <div class="reference-column">
+                        <p class="blog-content">Simulation Test</p>
+                        <div class="reference-images-row">
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/3u9SAmr61gA?si=xWHpVSAalCNTI3oL" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="blog-content">Gaussian Splat with Vellum from Entagma</p>
+                            </div>
+
+                            <div class="video-item">
+                                <video autoplay loop muted playsinline>
+                                    <source src="Videos/VFX775/VFX775_GS_01.mp4" type="video/mp4">
+                                </video>
+                                <p class="blog-content">Test Result</p>
+                            </div>
+                        </div>
+                        <p class="blog-content">Why it does not work: For the result, I tried using RBD simulation instead of Vellum, so it might need 
+                            some other way to deform points properly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>

@@ -1229,7 +1229,6 @@ footer{
   background-color: #E6E5E1;
   width: 100%;
   padding: 80px var(--side-margin); 
-  margin: 100px 0 0 0;
 }
 
 /* Override week-title padding in reference section */
@@ -1241,13 +1240,16 @@ footer{
   margin-top: 30px;
 }
 
-
 .reference-layout-section + .reference-layout-section {
   margin-top: 60px; /* Extra space between Layout and FX sections */
 }
 
 .reference-columns + .reference-columns {
   margin-top: 40px; /* Space between rows */
+}
+
+.reference-layout-section > .blog-content {
+  margin-bottom: 40px;
 }
 
 .reference-columns {
@@ -1276,6 +1278,10 @@ footer{
   column-gap: 10px;
 }
 
+.reference-images-row + .blog-content {
+  margin-top: 30px; /* Adjust this value as needed */
+}
+
 /* Single video in a column - full width */
 .reference-images video:only-child {
   column-span: all;
@@ -1300,6 +1306,55 @@ footer{
   break-inside: avoid;
 }
 
+.reference-images iframe {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+  column-span: all; /* Makes it span both columns */
+}
+
+.reference-images-row {
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.video-item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-item iframe,
+.video-item video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.video-item p {
+  margin: 0;
+  text-align: center;
+}
+
+.reference-images-row iframe,
+.reference-images-row video {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+}
 
 .shot-breakdown-image {
   display: flex;
@@ -1370,6 +1425,7 @@ footer{
   line-height: 24px;
   font-style: italic;
   color: #666;
+  padding-bottom: 100px;
   margin: 0;
 }
 
