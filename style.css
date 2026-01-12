@@ -1429,6 +1429,8 @@ footer{
   margin: 0;
 }
 
+
+
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
 
@@ -1555,7 +1557,14 @@ footer{
   }
 }
 
+/* Reference Section - Video Items */
+  .reference-images-row {
+    gap: 15px;
+  }
 
+  .video-item p {
+    font-size: 16px;
+  }
 
 
 /* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
@@ -1720,6 +1729,20 @@ footer{
   .ai-prompt {
     font-size: 15px;
     line-height: 22px;
+  }
+
+    /* Reference Section - Video Items */
+  .reference-images-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .video-item {
+    width: 100%;
+  }
+
+  .video-item p {
+    font-size: 16px;
   }
 }
 
@@ -1917,6 +1940,11 @@ footer{
     font-size: 14px;
     line-height: 20px;
   }
+
+  /* Reference Section - Video Items */
+  .video-item p {
+    font-size: 15px;
+  }
 }
 
 
@@ -2077,6 +2105,21 @@ footer{
   .shot-breakdown-image {
     margin-top: 20px;
   }
+
+    /* Reference Section - Video Items */
+  .reference-images-row {
+    gap: 20px;
+  }
+
+  .video-item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .video-item iframe,
+  .video-item video {
+    margin-bottom: 8px;
+  }
 }
 
 /* ------------------------------------------------------- 375 ------------------------------------------------------- */
@@ -2194,6 +2237,12 @@ footer{
 
   .ai-prompt {
     font-size: 12px;
+    line-height: 18px;
+  }
+
+    /* Reference Section - Video Items */
+  .video-item p {
+    font-size: 13px;
     line-height: 18px;
   }
 }
