@@ -1429,7 +1429,21 @@ footer{
   margin: 0;
 }
 
+#tree-growth #AI-generation .week-detail {
+  margin-bottom: 10px;
+}
 
+#tree-growth .ai-column > .week-detail {
+  margin-bottom: 10px;
+}
+
+#tree-growth #AI-generation {
+  margin-top: 0px; /* Override the default 60px */
+}
+
+#tree-growth .ai-column > .week-detail {
+  margin-bottom: 10px;
+}
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
@@ -1881,6 +1895,7 @@ footer{
 
   .week-detail {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .blog-content {
@@ -2026,6 +2041,7 @@ footer{
 
   .week-detail {
     font-size: 14px;
+    line-height: 20px;
   }
 
   .blog-content {
