@@ -1445,6 +1445,10 @@ footer{
   margin-bottom: 10px;
 }
 
+.column-content{
+  padding: 20px 0 0 25px;
+}
+
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
 
