@@ -51,15 +51,18 @@
         </div>
         
         <div class="reference-section">
-            <div class="reference-layout-section centered-layout">
+            <div class="reference-layout-section">
                 <div class="blog-layout-container">
                     <!-- Pre-visualization video -->
                     <div class="blog-left-column">
-                        <h3 class="previs-title">Week 3 Review</h3>
-                        <div class="blog-video-wrapper">
-                            <video controls playsinline>
-                                <source src="Videos/W26_SANM560/W26_SANM560_W02_Video.mp4" type="video/mp4">
-                            </video>
+                        <h3 class="previs-title">Pre-visualization</h3>
+                        <div class="blog-video-container">
+                            <div class="blog-video-wrapper">
+                                <iframe src="https://player.vimeo.com/video/1153340922?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                                        frameborder="0" 
+                                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                                        title="Onyx_Layout_V02"></iframe>
+                            </div>
                         </div>
                     </div>
                     
@@ -181,10 +184,50 @@
 
             <div class="column-content">
                 <div id="week-title">
-                    <h4 class="week-detail">Change objects color when they reach a specific position</h4>
+                    <h4 class="week-detail">Approach 1: change objects color changes when they reach a specific position</h4>
                 </div>
                 <li><p class="blog-content">Use VEX code to turn color of the object in to red to create a mask for printed texture</p></li>
                 <li><p class="blog-content">Use Attribute blur on color attribute to smooth the transition between base and mask colors</p></li>
+            </div>
+            
+            <div class="reference-images-row">
+                <div class="ai-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_01.png" alt="Input 1">
+                </div>
+                <div class="ai-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="Videos/W26_SANM560/W26_SANM560_W02_S06_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="column-content">
+                <div id="week-title">
+                    <h4 class="week-detail">Approach 2: Create mask in COP Net</h4>
+                </div>
+                <li><p class="blog-content">Bake position of the objects to it's texture and use Z position to create mask</p></li>
+                <li><p class="blog-content">Distort the result from position to create an interesting mask reveal</p></li>
+                <li><p class="blog-content">Apply the mask in Solaris</p></li>
+            </div>
+            
+            <div class="reference-images-row">
+                <div class="ai-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_01.png" alt="Input 1">
+                </div>
+                <div class="ai-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="Videos/W26_SANM560/W26_SANM560_W02_S06_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="column-content">
+                <div id="week-title">
+                    <h4 class="week-detail">Approach 3: Use attribute transfer and Solver</h4>
+                </div>
+                <li><p class="blog-content">Create object to transfer color attribute from</p></li>
+                <li><p class="blog-content">In Attribute transfer, choose color attribute (Cd)</p></li>
+                <li><p class="blog-content">Set up in Solver</p></li>
             </div>
             
             <div class="reference-images-row">
