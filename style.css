@@ -1744,9 +1744,21 @@ Center only the first reference-layout-section
   .ai-row {
     gap: 15px;
   }
-}
 
-/* Reference Section - Video Items */
+  /* Blog Layout */
+  .blog-layout-container {
+    gap: 30px;
+  }
+
+  .previs-title {
+    font-size: 26px;
+  }
+
+  .concept-section .week-num {
+    font-size: 24px;
+  }
+
+  /* Reference Section - Video Items */
   .reference-images-row {
     gap: 15px;
   }
@@ -1754,6 +1766,18 @@ Center only the first reference-layout-section
   .video-item p {
     font-size: 16px;
   }
+
+  .shot-breakdown-image-large img {
+    max-width: 1200px;
+  }
+
+  .grid-container {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+}
+
+
 
 
 /* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
@@ -1932,6 +1956,68 @@ Center only the first reference-layout-section
 
   .video-item p {
     font-size: 16px;
+  }
+
+  /* Blog Layout - Stack vertically */
+  .blog-layout-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .blog-left-column,
+  .blog-right-column {
+    width: 100%;
+  }
+
+  .previs-title {
+    font-size: 24px;
+  }
+
+  .concept-section .week-num {
+    font-size: 22px;
+  }
+
+  .concept-section .blog-content {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Reference images - 2 columns */
+  .reference-images-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reference-images-row .ai-item,
+  .reference-images-row .video-item {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .grid-item p {
+    font-size: 15px;
+  }
+
+  .shot-breakdown-image-large {
+    margin-top: 20px;
+  }
+
+  .shot-breakdown-image-large img {
+    max-width: 100%;
+  }
+
+  .AI-style-transfer-container {
+    padding-bottom: 40px;
+  }
+
+  /* Nested lists */
+  .text-content-list ul.text-content-list {
+    padding-left: 15px;
   }
 }
 
@@ -2135,6 +2221,53 @@ Center only the first reference-layout-section
   .video-item p {
     font-size: 15px;
   }
+
+  .blog-title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .week-date {
+    font-size: 24px;
+  }
+
+  .previs-title {
+    font-size: 22px;
+  }
+
+  .concept-section .week-num {
+    font-size: 20px;
+  }
+
+  .blog-content-section {
+    padding: 50px 80px 0;
+  }
+
+  .reference-section {
+    padding: 50px 80px;
+  }
+
+  .column-content {
+    padding: 15px 0 0 20px;
+  }
+
+  .grid-container {
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+  }
+
+  .grid-item p {
+    font-size: 14px;
+    margin-top: 0.8rem;
+  }
+
+  .shot-breakdown-image-large {
+    margin-top: 15px;
+  }
+
+  .AI-style-transfer-container {
+    padding-bottom: 30px;
+  }
 }
 
 
@@ -2311,6 +2444,105 @@ Center only the first reference-layout-section
   .video-item video {
     margin-bottom: 8px;
   }
+
+  .blog-title {
+    font-size: 24px;
+    line-height: 1.3;
+    padding-bottom: 15px;
+  }
+
+  .week-date {
+    font-size: 18px;
+  }
+
+  #blog-title-container {
+    padding: 0px 15px 30px 15px;
+  }
+
+  .previs-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .blog-left-column .blog-video-wrapper {
+    margin: 0;
+  }
+
+  .concept-section .week-num {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  .blog-content-section {
+    padding: 40px 30px 0;
+  }
+
+  .reference-section {
+    padding: 40px 30px;
+  }
+
+  .reference-columns {
+    gap: 30px;
+    padding-top: 15px;
+  }
+
+  .column-content {
+    padding: 12px 0 0 15px;
+  }
+
+  .reference-images-row {
+    padding-top: 20px;
+    gap: 15px;
+  }
+
+  /* FX Test images */
+  .reference-images-row .ai-item img {
+    margin-bottom: 15px;
+  }
+
+  .video-item p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .grid-item p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 0.8rem;
+  }
+
+  .grid-item video {
+    border-radius: 6px;
+  }
+
+  .shot-breakdown-image-large {
+    margin-top: 15px;
+  }
+
+  .shot-breakdown-image-large img {
+    border-radius: 6px;
+  }
+
+  .AI-style-transfer-container {
+    padding-bottom: 25px;
+  }
+
+  /* Nested lists - reduce indentation */
+  .text-content-list ul.text-content-list {
+    padding-left: 12px;
+  }
+
+  .text-content-list li {
+    margin-left: 15px;
+    padding-bottom: 12px;
+  }
 }
 
 /* ------------------------------------------------------- 375 ------------------------------------------------------- */
@@ -2435,6 +2667,91 @@ Center only the first reference-layout-section
   .video-item p {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .blog-title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .week-date {
+    font-size: 16px;
+  }
+
+  .previs-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .concept-section .week-num {
+    font-size: 16px;
+  }
+
+  .blog-content-section {
+    padding: 30px 20px 0;
+  }
+
+  .reference-section {
+    padding: 30px 20px;
+  }
+
+  .reference-layout-section {
+    margin-top: 15px;
+  }
+
+  .column-content {
+    padding: 10px 0 0 12px;
+  }
+
+  .blog-content {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .week-detail {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  #week-title {
+    padding-bottom: 20px;
+  }
+
+  .reference-columns {
+    gap: 25px;
+  }
+
+  .reference-images-row {
+    padding-top: 15px;
+  }
+
+  .grid-container {
+    gap: 1.2rem;
+    padding: 0.8rem 0;
+  }
+
+  .grid-item p {
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: 0.6rem;
+  }
+
+  .shot-breakdown-image-large {
+    margin-top: 12px;
+  }
+
+  .AI-style-transfer-container {
+    padding-bottom: 20px;
+  }
+
+  /* Nested lists */
+  .text-content-list ul.text-content-list {
+    padding-left: 10px;
+  }
+
+  .text-content-list li {
+    margin-left: 12px;
+    padding-bottom: 10px;
   }
 }
 
