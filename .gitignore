@@ -1,0 +1,9 @@
+# Ignore all video files
+*.mp4
+
+# Or ignore entire Videos folder
+Videos/
+
+# Ignore other large files if needed
+*.mov
+*.avi
