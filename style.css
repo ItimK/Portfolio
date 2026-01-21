@@ -1618,7 +1618,75 @@ Center only the first reference-layout-section
   font-size: 1rem;
 }
 
+/* Image-Text Side by Side Layout (70/30 split) */
+.image-text-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 
+.image-text-left {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.image-text-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.image-text-right {
+  flex: 0 0 30%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-text-right ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.image-text-right ul li {
+  margin-bottom: 20px;
+}
+
+.image-text-right ul li p {
+  margin: 0;
+}
+
+.result-title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.shot-breakdown-image-centered {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.shot-breakdown-image-centered > div {
+    width: calc(50% - 1rem);
+    text-align: center;
+}
+
+.shot-breakdown-image-centered img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shot-breakdown-image-centered p {
+    padding-top: 20px;
+}
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
@@ -2019,6 +2087,38 @@ Center only the first reference-layout-section
   .text-content-list ul.text-content-list {
     padding-left: 15px;
   }
+
+  .shot-breakdown-image-centered > div {
+        width: 70%;
+    }
+    
+  .grid-container {
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+  }
+
+  .image-text-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-text-left {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .image-text-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .image-text-right ul {
+    padding-left: 20px;
+  }
+
+  .image-text-right ul li {
+    margin-bottom: 15px;
+  }
 }
 
 /* ------------------------------------------------------- For Ipad (768) ------------------------------------------------------- */
@@ -2267,6 +2367,24 @@ Center only the first reference-layout-section
 
   .AI-style-transfer-container {
     padding-bottom: 30px;
+  }
+
+  .shot-breakdown-image-centered > div {
+      width: 80%;
+  }
+  
+  .shot-breakdown-image-centered p {
+      padding-top: 15px;
+      font-size: 15px;
+  }
+
+  .image-text-layout {
+    gap: 15px;
+  }
+
+  .image-text-right ul li p {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -2543,6 +2661,28 @@ Center only the first reference-layout-section
     margin-left: 15px;
     padding-bottom: 12px;
   }
+
+  .shot-breakdown-image-centered > div {
+      width: 90%;
+  }
+  
+  .shot-breakdown-image-centered p {
+      padding-top: 12px;
+      font-size: 14px;
+  }
+
+  .image-text-right ul {
+    padding-left: 15px;
+  }
+
+  .image-text-right ul li {
+    margin-bottom: 12px;
+  }
+
+  .image-text-right ul li p {
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
 
 /* ------------------------------------------------------- 375 ------------------------------------------------------- */
@@ -2751,7 +2891,25 @@ Center only the first reference-layout-section
 
   .text-content-list li {
     margin-left: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
+  }
+
+  .shot-breakdown-image-centered > div {
+      width: 95%;
+  }
+  
+  .shot-breakdown-image-centered p {
+      padding-top: 10px;
+      font-size: 13px;
+  }
+
+  .image-text-right ul li {
+    margin-bottom: 10px;
+  }
+
+  .image-text-right ul li p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
