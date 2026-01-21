@@ -57,16 +57,37 @@
             </div>
             
             <div class="reference-layout-section">
-                <p class="blog-content">Convert source images, including sketch and photorealistic image to a stylized one based on specific style reference</p>
+                <h4 class="week-detail">Convert source images, including sketch and photorealistic image to a stylized one based on specific style reference</h4>
+
+                <div class="image-text-layout">
+                    <div class="image-text-left">
+                        <img src="Photos/VFX775/VFX775_W02_StyleTransfer_04.png" alt="AI Style Transfer Interface">
+                    </div>
+                    <div class="image-text-right">
+                        <ul>
+                            <li><p class="blog-content"><strong>ControlNet Strength:</strong> Controls how closely the output follows source images' lines and shapes</p></li>
+                            <li><p class="blog-content"><strong>IP-Adapter Strength:</strong> Controls how much color/style transfers from reference painting</p></li>
+                            <li><p class="blog-content"><strong>Influence Steps:</strong> Number of refinement iterations (quality)</p></li>
+                            <li><p class="blog-content"><strong>Guidance Scale:</strong> How strongly AI follows all inputs</p></li>
+                            <li><p class="blog-content"><strong>Seed:</strong> Random seed for reproducibility</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="week-detail result-title">Result</h4>
 
                 <div class="AI-style-transfer-container">
+                    <div class="shot-breakdown-image-large">
+                        <img src="Photos/VFX775/VFX775_W02_StyleTransfer_02.jpg" alt="Shot Breakdown">
+                    </div>
                     <div class="shot-breakdown-image-large">
                         <img src="Photos/VFX775/VFX775_W02_StyleTransfer_01.jpg" alt="Shot Breakdown">
                     </div>
                     <div class="shot-breakdown-image-large">
-                        <img src="Photos/VFX775/VFX775_W02_StyleTransfer_02.jpg" alt="Shot Breakdown">
+                        <img src="Photos/VFX775/VFX775_W02_StyleTransfer_06.png" alt="Shot Breakdown">
                     </div>
                 </div>
+                
                 <div id="week-title">
                     <h4 class="week-detail">Technical Information</h4>
                     <ul class="text-content-list">
@@ -100,6 +121,13 @@
             </div>
 
             <div class="grid-section">
+                <div class="shot-breakdown-image-centered">
+                    <div>
+                        <img src="Photos/VFX775/VFX775_W02_StyleTransfer_05.jpg" alt="Shot Breakdown">
+                        <p class="blog-content">Reference</p>
+                    </div>
+                </div>
+
                 <div class="grid-container">
                     <div class="grid-item">
                         <video autoplay loop muted playsinline>
@@ -131,10 +159,26 @@
             <h4 class="week-detail">Challenges</h4>
             <ul class="text-content-list">
                 <li><p class="blog-content">Gaussian Splat looks blurry after receive a style transfer althought the transfer intensity is 0%</p></li>
+                <li><p class="blog-content">The style transfer missing in some area</p></li>
                 <li><p class="blog-content">The transfer process takes about 10 minutes</p></li>
-            </ul>
-            
+            </ul>    
         </div>
+
+        <!-- -------------------------------- To-Do list -------------------------------- -->
+
+        <div class="reference-section">   
+            <div class="reference-column">
+                <div id="week-title">
+                    <h4 class="week-num">To-Do Lists</h4>
+                </div>
+                <div class="column-content">
+                    <li><p class="blog-content">Use OpenUSD to store multiple variants of style of the same gaussian splat object</p></li>
+                    <li><p class="blog-content">Testing original and stylized gaussian splat in Unreal</p></li>
+                    <li><p class="blog-content">Refine Gaussian splat style AI transfer tool</p></li>
+                </div>
+            </div>
+        </div>
+
     </section>
 </body>
 
