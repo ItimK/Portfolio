@@ -1688,6 +1688,16 @@ Center only the first reference-layout-section
     padding-top: 20px;
 }
 
+/* Add spacing at the bottom of blog-content-section */
+.blog-content-section .reference-images-row {
+  margin-bottom: 100px;
+}
+
+/* Add spacing after video rows that show problem/fix demonstrations */
+.reference-section .reference-images-row:has(.video-item) {
+  margin-bottom: 50px;
+}
+
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
 

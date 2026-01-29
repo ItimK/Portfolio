@@ -131,76 +131,70 @@
         <!-- ---------------------------------------- FX ---------------------------------------- -->
 
         <!-- ------------------------ Flying Objects ------------------------ -->
-        <!-- <div class="blog-content-section">
+        <div class="blog-content-section">
             <div id="week-title">
-                <h4 class="week-num">FX Test</h4>
-                <h4 class="week-detail">Shot 06: Flying objects using particles</h4>
+                <h4 class="week-num">Grain FX Test</h4>
+                <h4 class="week-detail">Shot 03: Falling grain to show that the printer has started printing and to connect the shot with the next one</h4>
             </div>
 
             <div class="column-content">
-                <li><p class="blog-content">Draw a curve to define the path the objects will travel along and sweep the curve to create a mesh</p></li>
-                <li><p class="blog-content">Convert the tube into a VDB then use it to generate a velocity field</p></li>
-                <li><p class="blog-content">The velocity field guides and pushes particles smoothly along the path</p></li>
+                <li><p class="blog-content">Animate the source of the grain using Mountain SOP</p></li>
+                <li><p class="blog-content">Scatter points and apply Vellum Configure Grain</p></li>
+                <li><p class="blog-content">Connect to Vellum Solver and add collision</p></li>
+                <li><p class="blog-content">Use attribute wrangle and attribute randomize SOP to control colors, scale and orientation</p></li>
             </div>
             
             <div class="reference-images-row">
                 <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_02.jpg" alt="Input 1">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_Grain_01.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_03.jpg" alt="Input 1">
-                </div>
+            </div>        
+        </div>
+
+        <!-- ------------------------ Shot 06 Troubleshooting ------------------------ -->
+        
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Shot 6 Troubleshooting</h4>
+                <h4 class="week-detail">Problem: Floating objects did not move properly and they created copy of themselves when exporting USD</h4>
             </div>
 
-            <div class="column-content">
-                <li><p class="blog-content">Copy objects to points generated from a particle simulation (POP Net)</p></li>
-                <li><p class="blog-content">Use Attribute Adjust Integer to control an integer index per point</p></li>
-                <li><p class="blog-content">This index determines which object is copied to each point</p></li>
-                <li><p class="blog-content">Set the max value to match the number of objects to ensure valid assignment</p></li>
-                <li><p class="blog-content">Set Randomization By to 'Custom Attribute' and choose 'id' to prevent randomly change of objects
-                    when the points from POP Net die</p></li>
-            </div>
-            
             <div class="reference-images-row">
-                <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_04.png" alt="Inpt 1">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_ObjProblem.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Problem</p>
                 </div>
                 <div class="video-item">
                     <video autoplay loop muted playsinline>
-                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W02_S06_01.mp4" type="video/mp4">
+                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_ObjFix.mp4" type="video/mp4">
                     </video>
-                    <p class="blog-content">Change random seed in Attribute Adjust Integer</p>
+                    <p class="blog-content">Fix</p>
                 </div>
-            </div>
-
+            </div>  
             
-        </div>
-
-        <!-- ------------------------ Printed Texture Mask ------------------------ -->
-        <!-- <div class="blog-content-section">
             <div id="week-title">
-                <h4 class="week-detail">Shot 06: Create mask for printed textures</h4>
+                <h4 class="week-detail">Problem: Floating objects did not move properly and they created copy of themselves when exporting USD</h4>
             </div>
 
             <div class="column-content">
-                <div id="week-title">
-                    <h4 class="week-detail">Change objects color when they reach a specific position</h4>
-                </div>
-                <li><p class="blog-content">Use VEX code to turn color of the object in to red to create a mask for printed texture</p></li>
-                <li><p class="blog-content">Use Attribute blur on color attribute to smooth the transition between base and mask colors</p></li>
+                <li><p class="blog-content">Use Attibute Delete SOP to remove unused attribute </p></li>
+                <li><p class="blog-content">In Attribute Create SOP, set attribute type to 'Integer' instead of Float</p></li>
+                <li><p class="blog-content">Set Object to 'popobject' in POP Net</p></li>
             </div>
-            
+
             <div class="reference-images-row">
                 <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W02_S06_01.png" alt="Input 1">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W03_S06_AttrCreate.jpg" alt="">
                 </div>
-                <div class="ai-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W02_S06_02.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>  -->
 
+                <div class="ai-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W03_S06_Popnet.jpg" alt="">
+                </div>
+            </div>  
         </div>
     </section>
 </body>
