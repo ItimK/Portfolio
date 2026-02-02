@@ -90,17 +90,16 @@
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Team Tasks</h4>
-                            <li><p class="blog-content">Shot 1: Create 2 lighting options - dark and bright</p></li>
-                            <li><p class="blog-content">Shot 2: Camera change</p></li>
-                            <li><p class="blog-content">Refine modeling</p></li>
-                            <li><p class="blog-content">Shader quilt</p></li>
+                            <li><p class="blog-content">Shot 1-2: Change the fluid to particles and refine the look of the particles</p></li>
+                            <li><p class="blog-content">Shot 4-5: Refine the motion and look of the particles and set up lights for render</p></li>
+                            <li><p class="blog-content">Applied materials</p></li>
+                            <li><p class="blog-content">Generated designs for objects in final shot with copilot</p></li>
+                            <li><p class="blog-content">Updated lighting in shot 1, shot 2 and final shot </p></li>
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Individual Tasks</h4>
-                            <li><p class="blog-content">Shot 3: Vellum Grain simulation test</p></li>
-                            <li><p class="blog-content">Set up AOV passes and do render test</p></li>
-                            <li><p class="blog-content">Shot 6: Adjust path of the floating objects</p></li>
-                            <li><p class="blog-content">Shot 6: Adjust camera and angle and slow down  the transition</p></li>
+                            <li><p class="blog-content">Shot 3: Adjust the look of the particles</p></li>
+                            <li><p class="blog-content">Shot 6: Adjust path and increase number of the floating objects</p></li>
                         </div>
                     </div>
 
@@ -110,91 +109,22 @@
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Team Tasks</h4>
-                            <li><p class="blog-content">Shot 2: Polishing the fluid motion and refining particle-to-fluid conversion and viscosity</p></li>
-                            <li><p class="blog-content">Shot 4-5: Refine particles simulation</p></li>
-                            <li><p class="blog-content">UV unwrap objects</p></li>
-                            <li><p class="blog-content">AI Generate designs to go on objects post-printing</p></li>
-                            <li><p class="blog-content">Begin applying shaders to models</p></li>
+                            <li><p class="blog-content">Shot 2: Refine the curve path and add variations to the color flows</p></li>
+                            <li><p class="blog-content">Shot 4-5: Refine the look of particles</p></li>
+                            <li><p class="blog-content">Custom height map for objects post-printing</p></li>
+                            <li><p class="blog-content">Render AOVs</p></li>
+                            <li><p class="blog-content">AOV testing</p></li>
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Individual Tasks</h4>
-                            <li><p class="blog-content">Shot 3: Refine vellum grain add material</p></li>
-                            <li><p class="blog-content">Shot 6: Refine floating objects movement</p></li>
-                            <li><p class="blog-content">Shot 6: Refine mask for printed textures</p></li>
+                            <li><p class="blog-content">Shot 3: Refine particles material</p></li>
+                            <li><p class="blog-content">Shot 6: Shot 6: Add colorful particles floating together with the objects</p></li>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ---------------------------------------- FX ---------------------------------------- -->
-
-        <!-- ------------------------ Flying Objects ------------------------ -->
-        <div class="blog-content-section">
-            <div id="week-title">
-                <h4 class="week-num">Grain FX Test</h4>
-                <h4 class="week-detail">Shot 03: Falling grain to show that the printer has started printing and to connect the shot with the next one</h4>
-            </div>
-
-            <div class="column-content">
-                <li><p class="blog-content">Animate the source of the grain using Mountain SOP</p></li>
-                <li><p class="blog-content">Scatter points and apply Vellum Configure Grain</p></li>
-                <li><p class="blog-content">Connect to Vellum Solver and add collision</p></li>
-                <li><p class="blog-content">Use attribute wrangle and attribute randomize SOP to control colors, scale and orientation</p></li>
-            </div>
-            
-            <div class="reference-images-row">
-                <div class="ai-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_Grain_01.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>        
-        </div>
-
-        <!-- ------------------------ Shot 06 Troubleshooting ------------------------ -->
-        
-        <div class="reference-section">
-            <div id="week-title">
-                <h4 class="week-num">Shot 6 Troubleshooting</h4>
-                <h4 class="week-detail">Problem: Floating objects did not move properly and they created copy of themselves when exporting USD</h4>
-            </div>
-
-            <div class="reference-images-row">
-                <div class="video-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_ObjProblem.mp4" type="video/mp4">
-                    </video>
-                    <p class="blog-content">Problem</p>
-                </div>
-                <div class="video-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://github.com/ItimK/Portfolio/releases/download/v1.0.0/W26_SANM560_W03_ObjFix.mp4" type="video/mp4">
-                    </video>
-                    <p class="blog-content">Fix</p>
-                </div>
-            </div>  
-            
-            <div id="week-title">
-                <h4 class="week-detail">Problem: Floating objects did not move properly and they created copy of themselves when exporting USD</h4>
-            </div>
-
-            <div class="column-content">
-                <li><p class="blog-content">Use Attibute Delete SOP to remove unused attribute </p></li>
-                <li><p class="blog-content">In Attribute Create SOP, set attribute type to 'Integer' instead of Float</p></li>
-                <li><p class="blog-content">Set Object to 'popobject' in POP Net</p></li>
-            </div>
-
-            <div class="reference-images-row">
-                <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W03_S06_AttrCreate.jpg" alt="">
-                </div>
-
-                <div class="ai-item">
-                    <img src="Photos/W26_SANM560/W26_SANM560_W03_S06_Popnet.jpg" alt="">
-                </div>
-            </div>  
-        </div>
     </section>
 </body>
 
