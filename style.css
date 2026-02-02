@@ -1410,6 +1410,7 @@ Center only the first reference-layout-section
 }
 
 .video-item p {
+  padding-top: 15px;
   margin: 0;
   text-align: center;
 }
@@ -1594,9 +1595,13 @@ Center only the first reference-layout-section
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 1800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.grid-section .week-detail {
+  text-align: center;
 }
 
 .grid-item {
@@ -1696,6 +1701,23 @@ Center only the first reference-layout-section
 /* Add spacing after video rows that show problem/fix demonstrations */
 .reference-section .reference-images-row:has(.video-item) {
   margin-bottom: 50px;
+}
+
+.source-image-small {
+  max-width: 80%; /* or whatever size you want */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.comparison-title {
+  text-align: center;
+  margin-top: 70px; /* adjust as needed */
+  margin-bottom: 0px; /* reduce space below, adjust as needed */
+}
+
+.comparison-columns {
+  margin-bottom: 80px; /* adjust as needed */
 }
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
@@ -1882,7 +1904,12 @@ Center only the first reference-layout-section
   .week-container{
   width: 100%;
   padding: 50px 100px;
-}
+  }
+
+  .comparison-columns {
+  margin-bottom: 60px; /* adjust as needed */
+  }
+
 
   /* --------------------------------- RESUME --------------------------------- */
   /* Skills ------------------------ */  
@@ -2395,6 +2422,10 @@ Center only the first reference-layout-section
   .image-text-right ul li p {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .comparison-columns {
+  margin-bottom: 50px; /* adjust as needed */
   }
 }
 
@@ -2920,6 +2951,10 @@ Center only the first reference-layout-section
   .image-text-right ul li p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .comparison-columns {
+  margin-bottom: 40px; /* adjust as needed */
   }
 }
 

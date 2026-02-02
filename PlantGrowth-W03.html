@@ -50,7 +50,7 @@
             <h4 class="week-date">19-25 Jan 2026</h4>
         </div>
 
-        <!-- -------------------------------- Combined Section -------------------------------- -->
+        <!-- -------------------------------- AI JAM Process -------------------------------- -->
         <div class="reference-section">
             <div id="week-title">
                 <h4 class="week-num">Sketch to Screen</h4>
@@ -156,24 +156,63 @@
 
         </div>
 
-        <!-- -------------------------------- To-Do -------------------------------- -->
-
-        
-
-        <!-- -------------------------------- To-Do -------------------------------- -->
-<!-- 
+        <!-- -------------------------------- Animate GS -------------------------------- -->
         <div class="blog-content-section" id="tree-growth">
             <div id="week-title">
-                <h4 class="week-num">To-Do</h4>
+                <h4 class="week-num">Gaussian Splat Animation and Voxelization in Houdini</h4>
+                <h4 class="week-detail">Animate and voxelize Gaussian splat using GSOP, point attribute and copy to point</h4>
             </div>
-            <ul class="text-content-list">
-                <li><p class="blog-content">Figure out thesis area focus</p></li>
-                <li><p class="blog-content">Tree growth variant with PDG</p></li>
-                <li><p class="blog-content">Houdini simulation CPU/GPU operation research</p></li>
-                <li><p class="blog-content">AI Style transfer tool with image sequence</p></li>
-            </ul>    
-        </div> -->
-        
+
+            <div class="grid-section">
+                <h4 class="week-detail">Animation</h4>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W03_GSOP_Mask.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">Create Mask in Attribute Wrangle SOP with relbbox function in VEX</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W03_GSOP_FN.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">Final Output</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Voxelization</h4>
+                <div class="grid-container">
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_Orig.jpg" alt="">
+                        <p class="blog-content">Copy boxes to points with original attribute from GSOP</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_NodeTree.png" alt="">
+                        <p class="blog-content">Node Setup</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_Scale.jpg" alt="">
+                        <p class="blog-content">Equalize Scale - scale attribute from GSOP is vector not pscale (see in geometry spreadsheet)</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_Orient.jpg" alt="">
+                        <p class="blog-content">Remove Orientation and Alpha</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_FN.jpg" alt="">
+                        <p class="blog-content">Final Output</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="Photos/VFX775/VFX775_W03_ExportUSD.png" alt="">
+                        <p class="blog-content">To export animation with colors, set Pack Primitives to Unpack in USD Export SOP</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </section>
 </body>
 
