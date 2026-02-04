@@ -1720,6 +1720,32 @@ Center only the first reference-layout-section
   margin-bottom: 80px; /* adjust as needed */
 }
 
+/* Collision section specific styling */
+.collision-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.collision-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.collision-section img {
+    width: 100%;
+    max-width: 1240px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.collision-title {
+    margin-bottom: 30px !important; /* Increase gap between "Collision" text and image */
+}
+
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
 
