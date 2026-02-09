@@ -1363,6 +1363,11 @@ Center only the first reference-layout-section
   margin-top: 30px; /* Adjust this value as needed */
 }
 
+
+.reference-images-row .ai-item p {
+  text-align: center;
+}
+
 /* Single video in a column - full width */
 .reference-images video:only-child {
   column-span: all;
@@ -1693,7 +1698,7 @@ Center only the first reference-layout-section
 }
 
 .shot-breakdown-image-centered > div {
-    width: calc(50% - 1rem);
+    width: 100%;;
     text-align: center;
     max-width: 100%;
 }
@@ -1747,19 +1752,53 @@ Center only the first reference-layout-section
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    width: 100%; /* Add this */
+    width: 100%; 
 }
 
 .collision-section img {
     width: 100%;
-    max-width: none; /* Change from 1240px to none */
+    max-width: none; 
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .collision-title {
-    margin-bottom: 30px !important; /* Increase gap between "Collision" text and image */
+    margin-bottom: 30px !important;
+    text-align: center;
+}
+
+/* Smaller images variant of reference-images-row */
+.reference-images-row-small {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center; /* Center the items */
+}
+
+.reference-images-row-small .video-item {
+  flex: 0 1 1500px; /* Make it 60% width instead of flex: 1 */
+
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.reference-images-row-small .video-item img,
+.reference-images-row-small .video-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reference-images-row-small .video-item p {
+  padding-top: 15px;
+  margin: 0;
+  text-align: center;
 }
 
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
