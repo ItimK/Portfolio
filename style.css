@@ -1295,6 +1295,18 @@ Center only the first reference-layout-section
   padding: 80px var(--side-margin); 
 }
 
+/* White background for specific reference sections */
+.reference-section-white {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 80px var(--side-margin);
+}
+
+/* Override week-title padding in white reference section */
+.reference-section-white #week-title {
+  padding-bottom: 0px;
+}
+
 /* Override week-title padding in reference section */
 .reference-section #week-title {
   padding-bottom: 0px;
@@ -1676,11 +1688,13 @@ Center only the first reference-layout-section
     display: flex;
     justify-content: center;
     margin-bottom: var(--spacing-md);
+    width: 100%;
 }
 
 .shot-breakdown-image-centered > div {
     width: calc(50% - 1rem);
     text-align: center;
+    max-width: 100%; /* Add this */
 }
 
 .shot-breakdown-image-centered img {
@@ -1720,11 +1734,11 @@ Center only the first reference-layout-section
   margin-bottom: 80px; /* adjust as needed */
 }
 
-/* Collision section specific styling */
 .collision-section {
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 0 var(--side-margin);
 }
 
 .collision-section > div {
@@ -1732,11 +1746,12 @@ Center only the first reference-layout-section
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    width: 100%; /* Add this */
 }
 
 .collision-section img {
     width: 100%;
-    max-width: 1240px;
+    max-width: none; /* Change from 1240px to none */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -1854,6 +1869,11 @@ Center only the first reference-layout-section
     padding: 80px 10%;
   }
 
+  /* White background for specific reference sections */
+.reference-section-white  {
+    padding: 80px 10%;
+  }
+
   .reference-columns {
     gap: 60px;
   }
@@ -1901,6 +1921,11 @@ Center only the first reference-layout-section
     gap: 1.5rem;
     padding: 1.5rem 0;
   }
+
+  .shot-breakdown-image-centered > div {
+    width: 70%;
+  }
+
 }
 
 
@@ -2031,6 +2056,10 @@ Center only the first reference-layout-section
 
   /* Reference Section */
   .reference-section {
+    padding: 60px 100px;
+  }
+
+  .reference-section-white {
     padding: 60px 100px;
   }
 
@@ -2181,6 +2210,10 @@ Center only the first reference-layout-section
 
   .image-text-right ul li {
     margin-bottom: 15px;
+  }
+
+  .shot-breakdown-image-centered > div {
+    width: 80%;
   }
 }
 
@@ -2345,6 +2378,10 @@ Center only the first reference-layout-section
     padding: 50px 80px;
   }
 
+  .reference-section-white {
+    padding: 50px 80px;
+  }
+
   .reference-columns {
     gap: 40px;
   }
@@ -2410,6 +2447,10 @@ Center only the first reference-layout-section
     padding: 50px 80px;
   }
 
+  .reference-section-white {
+    padding: 50px 80px;
+  }
+
   .column-content {
     padding: 15px 0 0 20px;
   }
@@ -2452,6 +2493,10 @@ Center only the first reference-layout-section
 
   .comparison-columns {
   margin-bottom: 50px; /* adjust as needed */
+  }
+
+  .shot-breakdown-image-centered > div {
+    width: 80%;
   }
 }
 
@@ -2570,6 +2615,10 @@ Center only the first reference-layout-section
     padding: 40px 50px;
   }
 
+  .reference-section-white {
+    padding: 40px 50px;
+  }
+
   .reference-layout-section {
     margin-top: 20px;
   }
@@ -2666,6 +2715,10 @@ Center only the first reference-layout-section
     padding: 40px 30px;
   }
 
+  .reference-section-white {
+    padding: 40px 30px;
+  }
+
   .reference-columns {
     gap: 30px;
     padding-top: 15px;
@@ -2749,6 +2802,10 @@ Center only the first reference-layout-section
   .image-text-right ul li p {
     font-size: 15px;
     line-height: 22px;
+  }
+
+  .shot-breakdown-image-centered > div {
+    width: 90%;
   }
 }
 
@@ -2835,6 +2892,10 @@ Center only the first reference-layout-section
     padding: 30px 30px;
   }
 
+  .reference-section-white {
+    padding: 30px 30px;
+  }
+
   .reference-columns {
     gap: 25px;
   }
@@ -2899,6 +2960,10 @@ Center only the first reference-layout-section
   }
 
   .reference-section {
+    padding: 30px 20px;
+  }
+
+  .reference-section-white {
     padding: 30px 20px;
   }
 
@@ -2982,5 +3047,8 @@ Center only the first reference-layout-section
   .comparison-columns {
   margin-bottom: 40px; /* adjust as needed */
   }
-}
 
+  .shot-breakdown-image-centered > div {
+    width: 95%;
+  }
+}
