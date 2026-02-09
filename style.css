@@ -1689,12 +1689,13 @@ Center only the first reference-layout-section
     justify-content: center;
     margin-bottom: var(--spacing-md);
     width: 100%;
+    padding: 0 var(--side-margin)
 }
 
 .shot-breakdown-image-centered > div {
     width: calc(50% - 1rem);
     text-align: center;
-    max-width: 100%; /* Add this */
+    max-width: 100%;
 }
 
 .shot-breakdown-image-centered img {
