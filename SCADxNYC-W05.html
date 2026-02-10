@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCADxNYC-Week04</title>
+    <title>SCADxNYC-Week05</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -46,8 +46,8 @@
 <body>
     <section class="blog" id="blog-top">
         <div id="blog-title-container">
-            <h1 class="blog-title">Week 04 - Particles Simulation | Refining Lighting and FX</h1>
-            <h4 class="week-date">27 Jan - 01 Feb 2026</h4>
+            <h1 class="blog-title">Week 05 - Refine Particles FX | Lighting and Particles Look Development</h1>
+            <h4 class="week-date">02 - 08 Feb 2026</h4>
         </div>
         
         <div class="reference-section">
@@ -57,9 +57,9 @@
                     <div class="blog-left-column">
                         <h3 class="previs-title">Week 5 Review</h3>
                         <div class="blog-video-wrapper">
-                            <iframe src="https://player.vimeo.com/video/1161300734?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                            title="W26_NY5_TeamOnyx_V3"></iframe>
+                            <iframe src="https://player.vimeo.com/video/1163471918?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                            title="W26_NY6_TeamOnyx_V2"></iframe>
                         </div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
                     </div>
@@ -71,11 +71,16 @@
                                 <h4 class="week-num">Mentors Feedback and Suggestions</h4>
                             </div>
                             <div class="column-content">
-                                <li><p class="blog-content">Shot 1 Lighting: Darker is good but needs more time on look development</p></li>
-                                <li><p class="blog-content">Shot 1 Fluid: Should emit more from environment rather than itself</p></li>
-                                <li><p class="blog-content">Shot 4: improve lighting to show depth like in references</p></li>
-                                <li><p class="blog-content">Shots 3-5: transition from particles in shot 3 to shot 5 needs clarity (dry to liquid progression)</p></li>
-                                <li><p class="blog-content">Shot 6: Add more floating objects</p></li>
+                                <li><p class="blog-content">Combine Shots 3 and 4; Shot 4 is the hero.</p></li>
+                                <li><p class="blog-content">Shot 3: Consider a more macro approach</p></li>
+                                <li><p class="blog-content">Shot 3-4: Particle speed is too fast—formation should feel progressive, not explosive.</p></li>
+                                <li><p class="blog-content">Shots 3-4: Particles don’t clearly connect to the paint/printed surface</p></li>
+                                <li><p class="blog-content">Shots 3-4: Hitting a collider instead of the surface feels unintentional</p></li>
+                                <li><p class="blog-content">Shots 3-4: Let particles contribute to lighting.</p></li>
+                                <li><p class="blog-content">Shots 3-4: Layer multiple sims (particles, smoke, trails)</p></li>
+                                <li><p class="blog-content">Shots 4: Particles feel solid/glittery—aim for liquid, chalky pigment</p></li>
+                                <li><p class="blog-content">Shots 4: Too big and too few—use more, smaller particles.</p></li>
+                                <li><p class="blog-content">Shots 4: Add motion blur; watch substeps and banding.</p></li>
                             </div>
                         </div>
                     </div>
@@ -91,14 +96,17 @@
                             <h4 class="week-detail">Team Tasks</h4>
                             <li><p class="blog-content">Shot 1-2: Change the fluid to particles and refine the look of the particles</p></li>
                             <li><p class="blog-content">Shot 4-5: Refine the motion and look of the particles and set up lights for render</p></li>
-                            <li><p class="blog-content">Applied materials</p></li>
-                            <li><p class="blog-content">Generated designs for objects in final shot with copilot</p></li>
-                            <li><p class="blog-content">Updated lighting in shot 1, shot 2 and final shot </p></li>
+                            <li><p class="blog-content">Refined lighting for shot 1-2 and final shot</p></li>
+                            <li><p class="blog-content">Custom height/displacement for the painting shot</p></li>
+                            <li><p class="blog-content">Refined materials</p></li>
+                            <li><p class="blog-content">shot 1-2, 4: Render AOVS</p></li>
+                            <li><p class="blog-content">AOV testing</p></li>
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Individual Tasks</h4>
-                            <li><p class="blog-content">Shot 3: Adjust the look of the particles</p></li>
-                            <li><p class="blog-content">Shot 6: Adjust path and increase number of the floating objects</p></li>
+                            <li><p class="blog-content">Shot 3: Create emissive mask of the particles</p></li>
+                            <li><p class="blog-content">Shot 3-4: Lighting</p></li>
+                            <li><p class="blog-content">shot 3: Render AOVS</p></li>
                         </div>
                     </div>
 
@@ -108,16 +116,19 @@
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Team Tasks</h4>
-                            <li><p class="blog-content">Shot 2: Refine the curve path and add variations to the color flows</p></li>
+                            <li><p class="blog-content">Shot 1-2: Refine the particle flow and improve its smoothness.</p></li>
                             <li><p class="blog-content">Shot 4-5: Refine the look of particles</p></li>
                             <li><p class="blog-content">Custom height map for objects post-printing</p></li>
                             <li><p class="blog-content">Render AOVs</p></li>
                             <li><p class="blog-content">AOV testing</p></li>
+                            <li><p class="blog-content">Render AOVs</p></li>
                         </div>
                         <div class="column-content">
                             <h4 class="week-detail">Individual Tasks</h4>
-                            <li><p class="blog-content">Shot 3: Refine particles material</p></li>
-                            <li><p class="blog-content">Shot 6: Shot 6: Add colorful particles floating together with the objects</p></li>
+                            <li><p class="blog-content">Shot 3: Add layer of surrounding particles</p></li>
+                            <li><p class="blog-content">Shot 3: Create material for surrounding particles</p></li>
+                            <li><p class="blog-content">Shot 5: Add colorful particles floating together with the objects</p></li>
+                            <li><p class="blog-content">Shot 5: Add particle from shot 4 at the beginning of the shot so it’ll look continue</p></li>
                         </div>
                     </div>
                 </div>
@@ -127,83 +138,56 @@
         <!-- -------------------------------- FX Animate GS -------------------------------- -->
         <div class="blog-content-section" id="tree-growth">
             <div id="week-title">
-                <h4 class="week-num">Dropping Particles Effects</h4>
+                <h4 class="week-num">Emissive Mask for Dropping Particles</h4>
+                <h4 class="week-detail">Use age attribute to control the area and amount of the emissive material</h4>
             </div>
 
             <div class="grid-section">
-                <h4 class="week-detail">Final Output</h4>
-
-                <div class="reference-images-row">
+                <div class="reference-images-row emission-comparison">
                     <div class="ai-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W04_S03_Final.mp4" type="video/mp4">
-                        </video>
+                        <img src="Photos/W26_SANM560/W26_SANM560_W06_EmissOff.png" alt="">
+                        <p class="blog-content">Without Emission</p>
+                    </div>
+
+                    <div class="ai-item">
+                        <img src="Photos/W26_SANM560/W26_SANM560_W06_EmissOn.png" alt="">
+                        <p class="blog-content">With Emission</p>
                     </div>
                 </div>  
             </div>
 
+            <div class="grid-section">
+                <h4 class="week-detail">Emission Mask controls using VEX</h4>
+
+                <div class="reference-images-row">
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W06_EmissMask.mp4" type="video/mp4">
+                        </video>   
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- ------------------------ Shot 06 Troubleshooting ------------------------ -->
+        
+        <div class="reference-section">
             <div id="week-title">
-                <h4 class="week-detail">Process</h4>
+                <h4 class="week-num">Add Spill Lighting</h4>
+                <h4 class="week-detail">Problem: Want to have an obvious spill light from the emissive material but when the intensity is too high, the particles look blown out</h4>
+                <h4 class="week-detail">Solution: Use mesh light with the same texture as the particles to create spill light</h4>
             </div>
 
-            <div class="grid-section">
-                <h4 class="week-detail">Particles Source</h4>
-
-                <div class="reference-images-row">
-                    <div class="ai-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W04_S03_Source.mp4" type="video/mp4">
-                        </video>
-                        <p class="blog-content">Aminate the particles source (sphere) with mountain node</p>
-                    </div>
-
-                    <div class="ai-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W04_S03_Color.mp4" type="video/mp4">
-                        </video>
-                        <p class="blog-content">Use 'Attribute from Map' node to assign color to the source from texture map</p>
-                    </div>
-
-                    <div class="ai-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W04_S03_Scatter.mp4" type="video/mp4">
-                        </video>
-                        <p class="blog-content">Scatter points</p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="grid-section">
-                <h4 class="week-detail">Velocity Field</h4>
-
-                <div class="reference-images-row">
-                    <div class="ai-item">
-                        <img src="Photos/W26_SANM560/W26_SANM560_W04_S03_Path.png" alt="">
-                        <p class="blog-content">Create path and tube to contain velocity</p>
-                    </div>
-
-                    <div class="ai-item">
-                        <img src="Photos/W26_SANM560/W26_SANM560_W04_S03_VelNodes.png" alt="">
-                        <p class="blog-content">Setup velocity</p>
-                    </div>
-
-                    <div class="ai-item">
-                        <img src="Photos/W26_SANM560/W26_SANM560_W04_S03_Vel.png" alt="">
-                        <p class="blog-content">Visualize velocity</p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="reference-images-row-small">
+            <div class="reference-images-row">
                 <div class="video-item">
-                    <h4 class="week-detail collision-title">Collision</h4>
-                    <video autoplay loop muted playsinline>
-                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W04_S03_Collider.mp4" type="video/mp4">
-                    </video>
-                    <p class="blog-content">In POP Net, use 'Static Object' node to assign a collider</p>
+                    <img src="Photos/W26_SANM560/W26_SANM560_W06_SpillOff.png" alt="">
+                    <p class="blog-content">Without Mesh Light</p>
                 </div>
-            </div>
-
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W06_SpillOn.png" alt="">
+                    <p class="blog-content">With Mesh Light</p>
+                </div>
+            </div>   
         </div>
 
     </section>

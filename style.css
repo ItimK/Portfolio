@@ -1801,6 +1801,26 @@ Center only the first reference-layout-section
   text-align: center;
 }
 
+/* Center the container and add specific gap between images */
+.emission-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* Adjust this value to increase/decrease gap between images */
+}
+
+/* New specific class for emission comparison images */
+.emission-comparison .ai-item {
+  flex: 0 0 auto; /* Don't grow or shrink, use natural size */
+}
+
+.emission-comparison .ai-item img {
+  height: 1000px; /* Set a fixed height - adjust this value to make images taller/shorter */
+  width: auto; /* Width adjusts automatically to maintain aspect ratio */
+  object-fit: contain;
+  display: block;
+}
+
 /* ------------------------------------------------------- For Laptop (1440) ------------------------------------------------------- */
 @media only screen and (max-width: 1459px){
 
