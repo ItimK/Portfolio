@@ -1806,17 +1806,18 @@ Center only the first reference-layout-section
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px; /* Adjust this value to increase/decrease gap between images */
+  gap: 30px;
+  padding: 0 30px; /* Default padding for large screens */
 }
 
 /* New specific class for emission comparison images */
 .emission-comparison .ai-item {
-  flex: 0 0 auto; /* Don't grow or shrink, use natural size */
+  flex: 0 0 auto;
 }
 
 .emission-comparison .ai-item img {
-  height: 1000px; /* Set a fixed height - adjust this value to make images taller/shorter */
-  width: auto; /* Width adjusts automatically to maintain aspect ratio */
+  height: 800px; /* Default height for large screens */
+  width: auto;
   object-fit: contain;
   display: block;
 }
@@ -1986,9 +1987,15 @@ Center only the first reference-layout-section
     width: 70%;
   }
 
+  .emission-comparison {
+    padding: 0 10%;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 500px;
+  }
+
 }
-
-
 
 
 /* ------------------------------------------------------- For Ipad (1024) ------------------------------------------------------- */
@@ -2275,6 +2282,19 @@ Center only the first reference-layout-section
   .shot-breakdown-image-centered > div {
     width: 80%;
   }
+
+  .emission-comparison {
+    flex-direction: row !important;
+    padding: 0 100px;
+  }
+  
+  .emission-comparison .ai-item {
+    width: auto !important;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 500px;
+  }
 }
 
 /* ------------------------------------------------------- For Ipad (768) ------------------------------------------------------- */
@@ -2386,6 +2406,15 @@ Center only the first reference-layout-section
 
   .breakdown h3{
     font-size: 25px;
+  }
+
+  .emission-comparison {
+    padding: 0 80px;
+    gap: 20px;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 450px;
   }
   
   /* --------------------------------- NYC BLOG --------------------------------- */
@@ -2557,6 +2586,20 @@ Center only the first reference-layout-section
 
   .shot-breakdown-image-centered > div {
     width: 80%;
+  }
+
+  .emission-comparison {
+    flex-direction: row !important;
+    padding: 0 80px;
+    gap: 20px;
+  }
+  
+  .emission-comparison .ai-item {
+    width: auto !important;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 450px;
   }
 }
 
@@ -2867,6 +2910,20 @@ Center only the first reference-layout-section
   .shot-breakdown-image-centered > div {
     width: 90%;
   }
+
+  .emission-comparison {
+    flex-direction: row !important;
+    padding: 0 50px;
+    gap: 15px;
+  }
+  
+  .emission-comparison .ai-item {
+    width: auto !important;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 350px;
+  }
 }
 
 /* ------------------------------------------------------- 375 ------------------------------------------------------- */
@@ -3110,5 +3167,19 @@ Center only the first reference-layout-section
 
   .shot-breakdown-image-centered > div {
     width: 95%;
+  }
+
+  .emission-comparison {
+    flex-direction: row !important;
+    padding: 0 30px;
+    gap: 10px;
+  }
+  
+  .emission-comparison .ai-item {
+    width: auto !important;
+  }
+  
+  .emission-comparison .ai-item img {
+    height: 300px;
   }
 }
