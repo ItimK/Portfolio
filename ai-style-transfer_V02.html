@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Style Transfer Tool</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="DemoReel.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section id="work-area">
+        <div id="video-wrapper">
+            <div class="breakdown first-breakdown">
+                <h3>Style Transfer Tool</h3>
+            </div>
+            <div class="work-video-container">
+                <iframe src="https://player.vimeo.com/video/1139696066?h=68bd523347&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=0" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                title="StyleTransfer_Demo"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <div class="breakdown">
+                <h3>Sketch To Render Tool</h3>
+            </div>
+            <div class="work-video-container">
+                <iframe src="https://player.vimeo.com/video/1139696048?h=15f7f86726&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                title="SketchToRender_Demo"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+
+        <div class="work-BG">
+            <div class="work-text-wrapper">
+                <h3 class="work-title">AI Style Transfer Tool</h3>
+                <p class="work-date">October, 2025 (Last updated Jan, 2026)</p>
+                <p class="text-title">Overview</p>
+                <p class="text-content"
+                    >This Python-based AI tool was initially developed during a 2-week SCADpro x Electronic Arts Design Challenge 
+                    to solve a critical production challenge: maintaining consistent art style across multiple concept pieces. 
+                    As part of the programming team, I created custom style transfer tools that allow artists to apply visual characteristics 
+                    from reference images to new content, ensuring cohesive art direction throughout the production pipeline. 
+                    I have continued to develop and expand the tool's capabilities following the challenge's conclusion.</p>
+
+                <p class="text-title">AI Models and Tools</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><strong>Stable Diffusion XL (SDXL):</strong> Large-scale text-to-image diffusion model for high-quality 1024x1024 generation</li>
+                    <li class="text-content"><strong>IP-Adapter:</strong> It transfers style and color from reference paintings by encoding them through CLIP vision 
+                        and injecting visual characteristics into the diffusion process. This captures artistic qualities like brushstrokes, color palettes, and mood</li>
+                    <li class="text-content"><strong>Softedge ControlNet:</strong> Preserves sketch composition by detecting edges with Gaussian blur, 
+                        creating soft boundaries that produce natural, painterly results without harsh artifacts.</li>
+                    <li class="text-content"><strong>SAM:</strong> Precise object boundary detection.</li>
+                    <li class="text-content"><strong>VGG 19:</strong> A Pre-trained AI model used to extract semantic features from images at multiple levels of abstraction 
+                        including edges and color, textures and patterns</li>
+                    <li class="text-content"><strong>AdaIN (Adaptive Instance Normalization):</strong> A neural style transfer technique that enables real-time transfer 
+                        of artistic styles between images. This technique is widely used to maintain consistent visual aesthetics across multiple pieces of content, 
+                        making it ideal for concept art pipelines where style consistency is critical.</li>
+                </ul>
+
+                <p class="text-title">Key Features</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><strong>Sketch-to-Render Tool:</strong> Converts hand-drawn sketches into stylized images using ControlNets and Stable Diffusion XL. 
+                        It intelligently identifies and preserves objects from the sketches through shape-based computer vision and renders them with 
+                        appropriate colors and artistic style based on a reference image.</li>
+                    <li class="text-content"><strong>Style-Transfer Tool:</strong> Transform images by applying artistic styles from reference photos, 
+                        with detailed control over the placement and intensity of effects. Using luminance masks, users can independently adjust how strongly 
+                        the style appears in bright areas, midtones, and shadows, and also assign different reference images to each tonal range for complex, 
+                        layered artistic results.</li>
+                </ul>
+                <p class="software">HP AI Studio | Python | Hugging Face</p>
+            </div>
+
+            <div class="next-back-wrapper">
+                <a href="waterdrop-automaton.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
+                </a>
+                <a href="winterScatter-tool.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
+                </a>                
+            </div>
+        </div>
+    </section>
+
+    <section id="get-in-touch" class="section-p1">
+        <h3 class="feedback-title">Always open to constructive feedback!</h3>
+        <form class="form" id="marble-temple-feedback" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbwuqYpqd0arHNhoGyGINaxnuB90-3-8krHT-W_DBVzN48E1VAAGh_oW3KTm-TbrPjAM/exec" method="post">
+            <div id="input">
+                <div id="name-email">
+                    <input type="text" name="Name" placeholder="Name..." required>
+                    <input type="email" name="Email" placeholder="Email..." required>
+                </div>
+                <div id="message">
+                    <textarea name="Message" placeholder="Message..."></textarea>
+                </div>
+            </div>
+            <div id="submit">
+                <button class="btn2" type="submit" class="btn">Submit</button>
+            </div>
+            <span id="msg" style="display:none;"></span>
+        </form>
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#work-area" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCADxNYC-Week06</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="DemoReel.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 07 - Add Layers of Particles | Lighting and Particles Look Development</h1>
+            <h4 class="week-date">10 - 16 Feb 2026</h4>
+        </div>
+        
+        <div class="reference-section">
+            <div class="reference-layout-section centered-layout">
+                <div class="blog-layout-container">
+                    <!-- Pre-visualization video -->
+                    <div class="blog-left-column">
+                        <h3 class="previs-title">Week 6 Review</h3>
+                        <div class="blog-video-wrapper">
+                            <iframe src="https://player.vimeo.com/video/1165535772?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            title="W26_NY7_TeamOnyx_V2"></iframe>
+                        </div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                    
+                    <!-- Mentors Feedback -->
+                    <div class="blog-right-column">
+                        <div class="concept-section">
+                            <div id="week-title">
+                                <h4 class="week-num">Mentors Feedback and Suggestions</h4>
+                            </div>
+                            <div class="column-content">
+                                <li><p class="blog-content">Shot 1: Less perfection on the particle trails.</p></li>
+                                <li><p class="blog-content">Shot 1: Consider boosting color spill</p></li>
+                                <li><p class="blog-content">Shot 1-2: Feels a bit too long.</p></li>
+                                <li><p class="blog-content">Shots 3: Too dark at the beginning </p></li>
+                                <li><p class="blog-content">Shots 3: Glowing particles should start earlier</p></li>
+                                <li><p class="blog-content">Shots 3-4: Need more pscale variation in the particles.</p></li>
+                                <li><p class="blog-content">Shots 3-4: LSome particles should move slower than others</p></li>
+                                <li><p class="blog-content">Shots 4: Specular might be too much</p></li>
+                                <li><p class="blog-content">Shots 4: Lighting feels flat - needs better, more dynamic lighting.</p></li>
+                                <li><p class="blog-content">Shots 4: Reveal ends too soon.</p></li>
+                                <li><p class="blog-content">Shots 5: Background is blending too much with the product - should be darker.</p></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completed and To-Do Lists -->
+                <div class="reference-columns">                    
+                    <div class="reference-column">
+                        <div id="week-title">
+                            <h4 class="week-num">Completed</h4>
+                        </div>
+                        <div class="column-content">
+                            <h4 class="week-detail">Team Tasks</h4>
+                            <li><p class="blog-content">Shot 1: Add another layer of particles</p></li>
+                            <li><p class="blog-content">Shot 3: Add pyro and refine particles</p></li>
+                            <li><p class="blog-content">Refined lighting for shot 1-2 and final shot</p></li>
+                            <li><p class="blog-content">Custom height/displacement for the painting shot</p></li>
+                            <li><p class="blog-content">Refined materials</p></li>
+                            <li><p class="blog-content">shot 3: Render AOVS</p></li>
+                            <li><p class="blog-content">Shot 2-3:Compositing</p></li>
+                        </div>
+                        <div class="column-content">
+                            <h4 class="week-detail">Individual Tasks</h4>
+                            <li><p class="blog-content">Shot 1: Add spill light from the particles</p></li>
+                            <li><p class="blog-content">Shot 3: Adjust material and lighting on the particles</p></li>
+                            <li><p class="blog-content">Shot 3-4: Lighting</p></li>
+                            <li><p class="blog-content">Shot 4: Add particle from shot 4 at the beginning of the shot so it’ll look continue</p></li>
+                        </div>
+                    </div>
+
+                    <div class="reference-column">
+                        <div id="week-title">
+                            <h4 class="week-num">To-Do Lists</h4>
+                        </div>
+                        <div class="column-content">
+                            <h4 class="week-detail">Team Tasks</h4>
+                            <li><p class="blog-content">Shot 1-2: Refine the particle flow and improve its smoothness.</p></li>
+                            <li><p class="blog-content">Shot 3: Refine the look of particles</p></li>
+                            <li><p class="blog-content">Shot 4: Printed materials for items in final shot</p></li>
+                            <li><p class="blog-content">Render AOVs</p></li>
+                            <li><p class="blog-content">Compositing</p></li>
+                        </div>
+                        <div class="column-content">
+                            <h4 class="week-detail">Individual Tasks</h4>
+                            <li><p class="blog-content">Shot 3-4: Refine particles</p></li>
+                            <li><p class="blog-content">Shot 4: Add colorful particles floating together with the objects</p></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------- Particles Around The Main One -------------------------------- -->
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Particles Around The Main One</h4>
+                <h4 class="week-detail">Add scattered particles around the main particle for more variation</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_Out_SwirlCode.png" alt="">
+                    <p class="blog-content">Create swirling effect using cross product in VEX</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_Out_KillCode.png" alt="">
+                    <p class="blog-content">Kill particles based on their position</p>
+                </div>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_Out_Iso.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Added layer of particles</p>
+                </div>
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_Out_All.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">All particles combined</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------ Mesh Light ------------------------ -->
+        
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Manipulating Mesh Light to Create Spill Light</h4>
+                <h4 class="week-detail">Use mesh light to create a convincing spill light that would be more efficient than rely solely on emissive material</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_Spill-01_AnimSource.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Reshape and animate sphere to mimic moving light coming from the particles</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_SpillTex.png" alt="">
+                    <p class="blog-content">Add the same texture used for particles to the mesh</p>
+                </div>
+            </div>  
+            
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_Spill-02_Attach.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Attach the position of the light source to the lowest part of the particles using VEX</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_SpillPos.png" alt="">
+                    <p class="blog-content">VEX Code</p>
+                </div>
+            </div>   
+        </div>
+
+        <!-- -------------------------------- Particles Around The Main One -------------------------------- -->
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Create Mask for Revealing Printed Texture</h4>
+                <h4 class="week-detail">Use VEX code to generate a mask for transforming wood texture to the printed texture</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_Dist.png" alt="">
+                    <p class="blog-content">Use distance function in Attibute Wrangle node to create black and white area based on the distance from the center to each points of the top face</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_Noise.png" alt="">
+                    <p class="blog-content">Add to the original global position attribute (@P)</p>
+                </div>
+            </div>
+
+            <div id="week-title">
+                <p class="blog-content">Problem: Printed texture has a significantly stronger bump value than the wood texture creating a gap between top face of the wood board
+                    and the rest of it when the white mask reach the edges
+                </p>
+                <p class="blog-content">Solution: Create black frame on the edges so white area will never touch the edges
+                </p>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_Ver.png" alt="">
+                    <p class="blog-content">Create vertical stripes using sin() in VEX</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_Hor.png" alt="">
+                    <p class="blog-content">Create horizontal stripes using sin() in VEX</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_Frame.png" alt="">
+                    <p class="blog-content">Multiply the horizontal and vertical stripes to combine them creating a frame</p>
+                </div>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_PrintedTexMask.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Animated mask without frame</p>
+                </div>
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/W26_SANM560/W26_SANM560_W07_PrintedTexMask-Frame.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Animated mask with frame</p>
+                </div>
+            </div>   
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_NoFrame.png" alt="">
+                    <p class="blog-content">Printed Texture without frame</p>
+                </div>
+                <div class="video-item">
+                    <img src="Photos/W26_SANM560/W26_SANM560_W07_PrintedTex_WithFrame.png" alt="">
+                    <p class="blog-content">Printed Texture with frame</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
