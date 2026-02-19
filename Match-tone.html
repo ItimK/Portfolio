@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinterScatter Tool</title>
+    <title>Match Tone</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -47,36 +47,52 @@
 <body>
     <section id="work-area">
         <div id="video-wrapper">
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/MatchTone/MatchTone_Final.png" alt="">
+                    <p class="blog-content">Final Render</p>
+                </div>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/MatchTone/MatchTone_Ref.jpg" alt="">
+                    <p class="blog-content">Reference</p>
+                </div>
+            </div>
+
+            <div class="breakdown">
+                <h3>Process</h3>
+            </div>
+
             <div class="work-video-container">
-                <iframe src="https://player.vimeo.com/video/1137499641?h=f52479d55e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1"
-                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                title="Tree Distribution"></iframe>
+                <iframe src="https://player.vimeo.com/video/1166232026?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                title="MatchTone_Process"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
         <div class="work-BG">
             <div class="work-text-wrapper">
-                <h3 class="work-title">WinterScatter Tool</h3>
-                <p class="work-date">March, 2025</p>
+                <h3 class="work-title">Matching Elemtents of Mood</h3>
+                <p class="work-date">Dec, 2025</p>
                 <p class="text-title">Inspiration</p>
                 <p class="text-content"
-                    >Harbin International Ice and Snow Sculpture Festival</p>          
+                    >Blade Runner 2049</p>
                 <p class="text-title">Process</p>
                 <p class="text-content"
-                    >This project is a Python-driven Maya tool designed to streamline the creation of winter-themed scenes. 
-                    All assets—trees, snowmen, lighting, and texturing—are procedurally generated through Python commands, with the ground being the only manually modeled element.
-                    By selecting points on any geometry and running the tool, artists can instantly place trees and snowmen in the scene.
-                    A custom UI allows users to choose the time of day (Day or Night), automatically applying the appropriate HDRI, select a color tone (Warm, Cool, or Mixed), 
-                    and adjust the angle of the primary light source.</p>
-                <p class="software">Python | Maya</p>
+                    >Recreated a reference scene with precision by replicating its lighting, materials, models, and color palette to achieve a cohesive visual tone.
+                    The process began with in-depth reference analysis — estimating object scale from actor/actress heights, then reverse-engineering the camera's focal length,
+                    vanishing point, and perspective to faithfully reconstruct the original composition.</p>
+                <p class="software">Maya | Redshift</p>
             </div>
 
             <div class="next-back-wrapper">
-                <a href="ai-style-transfer.html">
+                <a href="waterdrop-automaton.html">
                     <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
                 </a>
-                <a href="arnold-settings-capture.html">
+                <a href="ai-style-transfer.html">
                     <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
                 </a>                
             </div>
@@ -85,8 +101,8 @@
 
     <section id="get-in-touch" class="section-p1">
         <h3 class="feedback-title">Always open to constructive feedback!</h3>
-        <form class="form" id="woodland-grave-feedback" name="submit-to-google-sheet" 
-            action="https://script.google.com/macros/s/AKfycbx7iBSu20Bwhh__VCvT78MkzK_sU3QZlqkK9-CKIrZnfrJ34Bk4yS3mb7FOp_4iT0eu/exec" method="post">
+        <form class="form" id="waterdrop-feedback" name="submit-to-google-sheet" 
+            action="https://script.google.com/macros/s/AKfycbziPNhc3-wzhXe4yHNvI1Y6taJ9gj5d82jgzv9JAq-ncpRVEGB530MYSgkqPRTWRkXF/exec" method="post">
             <div id="input">
                 <div id="name-email">
                     <input type="text" name="Name" placeholder="Name..." required>
