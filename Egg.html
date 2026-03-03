@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match To Live Action</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="index.html">Itim Kongsakulvatnasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section id="work-area">
+        <div id="video-wrapper">
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/Egg/Egg_Final.png" alt="">
+                </div>
+            </div>
+
+            <div class="breakdown">
+                <h3>Breakdown</h3>
+            </div>
+            <div class="work-video-container">
+                <iframe src="https://player.vimeo.com/video/1169548145?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                title="MatchToLiveAction"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+           
+        </div>
+
+        <div class="work-BG">
+            <div class="work-text-wrapper">
+                <h3 class="work-title">Match To Live Action</h3>
+                <p class="work-date">Nov, 2026</p>
+                <p class="text-title">Process</p>
+                <p class="text-content"
+                    >Recreated a reference scene with precision by replicating its lighting, materials, models, and color palette to achieve a cohesive visual tone.
+                    The process began with in-depth reference analysis — estimating object scale from actor/actress heights, then reverse-engineering the camera's focal length,
+                    vanishing point, and perspective to faithfully reconstruct the original composition.</p>
+
+                <p class="software">Maya | Arnold | Nuke</p>
+            </div>
+
+            <div class="next-back-wrapper">
+                <a href="waterdrop-automaton.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
+                </a>
+                <a href="ai-style-transfer.html">
+                    <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
+                </a>                
+            </div>
+        </div>
+    </section>
+
+    <div class="reference-section">
+        <div id="week-title">
+            <h4 class="week-num">Preparation</h4>
+        </div>
+        
+        <div class="reference-layout-section">
+            <h4 class="week-detail">Shooting clean plate, chrome ball, gray ball, cube and twin plate for tone matching assistance</h4>
+        </div>
+
+        <!-- Videos directly in same section -->
+        <div class="reference-images-row">
+            <div class="video-item">
+                <img src="Photos/Egg/Egg_CleanPlate.jpg" alt="">
+                <p class="blog-content">clean Plate</p>
+            </div>
+
+            <div class="video-item">
+                <img src="Photos/Egg/Egg_TwinPlate.jpg" alt="">
+                <p class="blog-content">Twin Plate shows light will affect the same object but different position and see if the shadow casts on the original object (left),
+                    so it can be used as a compositing reference as well
+                </p>
+            </div>
+        </div>
+
+        <div class="reference-images-row">
+            <div class="video-item">
+                <img src="Photos/Egg/Egg_GrayBall.jpg" alt="">
+                <p class="blog-content">Object with light intensity reference</p>
+            </div>
+            <div class="video-item">
+                <img src="Photos/Egg/Egg_ChromeBall.jpg" alt="">
+                <p class="blog-content">Object with chrome ball for reflection reference</p>
+            </div>
+            <div class="video-item">
+                <img src="Photos/Egg/Egg_Cube.jpg" alt="">
+                <p class="blog-content">Cube helps seeing direction of the light more clearly</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="get-in-touch" class="section-p1">
+        <h3 class="feedback-title">Always open to constructive feedback!</h3>
+        <form class="form" id="waterdrop-feedback" name="submit-to-google-sheet" 
+            action="https://script.google.com/macros/s/AKfycbziPNhc3-wzhXe4yHNvI1Y6taJ9gj5d82jgzv9JAq-ncpRVEGB530MYSgkqPRTWRkXF/exec" method="post">
+            <div id="input">
+                <div id="name-email">
+                    <input type="text" name="Name" placeholder="Name..." required>
+                    <input type="email" name="Email" placeholder="Email..." required>
+                </div>
+                <div id="message">
+                    <textarea name="Message" placeholder="Message..."></textarea>
+                </div>
+            </div>
+            <div id="submit">
+                <button class="btn2" type="submit" class="btn">Submit</button>
+            </div>
+            <span id="msg" style="display:none;"></span>
+        </form>
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#work-area" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
