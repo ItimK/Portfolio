@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCAD-GroupThesis-Week06</title>
+    <title>SCAD-GroupThesis-Week07</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -49,53 +49,96 @@
 <body>
     <section class="blog" id="blog-top">
         <div id="blog-title-container">
-            <h1 class="blog-title">Week 06 - Final Project Ideation | GSplat Research and Testing</h1>
-            <h4 class="week-date">Feb 09 - 16, 2026</h4>
+            <h1 class="blog-title">Week 07 - GSplat Soil Asset Creation | Soil Animation in Houdini</h1>
+            <h4 class="week-date">Feb 17 - 23, 2026</h4>
         </div>
 
-        <!-- -------------------------------- GS with Simulation -------------------------------- -->
+        <!-- -------------------------------- Soil creation -------------------------------- -->
         <div class="reference-section">
             <div id="week-title">
-                <h4 class="week-num">Gaussian Splat Asset Creation</h4>
+                <h4 class="week-num">GSplat Soil Asset Creation</h4>
             </div>
             
             <div class="reference-layout-section">
-                <h4 class="week-detail">Tree Root</h4>
-            </div>
-
-            <div class="reference-images-row">
-                <div class="video-item">
-                    <img src="Photos/VFX775/VFX775_W06_TreeRoot_01.png" alt="">
-                </div>
-
-                <div class="video-item">
-                    <img src="Photos/VFX775/VFX775_W06_TreeRoot_02.png" alt="">
-                </div>
-            </div>
-
-            <div class="reference-images-row">
-                <div class="video-item">
-                    <img src="Photos/VFX775/VFX775_W06_TreeRoot_03.png" alt="">
-                </div>
-
-                <div class="video-item">
-                    <img src="Photos/VFX775/VFX775_W06_TreeRoot_04.png" alt="">
-                </div>
+                <h4 class="week-detail">Create Gaussian Splat soil for animating in Houini</h4>
             </div>
 
             <div class="reference-images-row">
                 <div class="video-item">
                     <video autoplay loop muted playsinline>
-                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W06_TreeRoot_GS.mp4" type="video/mp4">
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_01RealityScan.mp4" type="video/mp4">
                     </video>
+                    <p class="blog-content">Align images of the soil from different angles around it</p>
+                </div>
+
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_02lichtfeld.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Train a Gaussian Splat asset in Lichtfeld</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------- Soil Animation -------------------------------- -->
+
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">GSplat Asset Deformation and Animation</h4>
+                <h4 class="week-detail">Deform and animate Gaussian Splats asset in Houdini using VEX code</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_03BudSetup.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Setup a collider</p>
+                </div>
+
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_04HoudiniResult.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Result in Houdini</p>
                 </div>
             </div>
 
-            <div class="reference-layout-section centered-layout">
-                <div class="column-content">
-                    <h4 class="week-detail">Notes</h4>
-                    <li><p class="blog-content">340 Photos</p></li>
-                    <li><p class="blog-content">Might not suitable for close up shot</p></li>
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_01SoilDeformVEX.png" alt="">
+                    <p class="blog-content">VEX code for soil deformation</p>
+                </div>
+
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_02Node.png" alt="">
+                    <p class="blog-content">Nodes setup</p>
+                </div>
+            </div>
+
+        </div>   
+
+        <!-- -------------------------------- Soil creation -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Import Asset to Unreal Engine 5</h4>
+            </div>
+            
+            <div class="reference-layout-section">
+                <h4 class="week-detail">Use Postshot plugin to import animated asset (PLY sequence) into Unreal Engine 5</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_03PostShot.png" alt="">
+                    <p class="blog-content">Import PLY sequence into Postshot and save the project</p>
+                </div>
+
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_05SoilUnreal.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Test animation result in Unreal Engine 5</p>
                 </div>
             </div>
         </div>
