@@ -1085,6 +1085,17 @@ footer{
   text-align: center;
 }
 
+.work-text-wrapper .text-content-list .text-content a {
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.work-text-wrapper .text-content-list .text-content a:hover {
+  text-decoration: underline;
+}
+
 /* --------------------------------- BLOG --------------------------------- */
 .blog{
   padding-top: 130px;
