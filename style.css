@@ -1169,6 +1169,52 @@ footer{
   gap: 30px;
 }
 
+.poster-centered-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.poster-hover-zoom {
+    cursor: zoom-in;
+    transition: opacity 0.3s ease;
+}
+
+.poster-hover-zoom:hover {
+    opacity: 0.85;
+}
+
+#poster-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+#poster-lightbox.active {
+    display: flex;
+}
+
+#poster-lightbox img {
+    max-height: 90vh;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+#download-resume-container.work-info-btn {
+  padding-top: 0px;
+  justify-content: flex-start;
+}
+
 .video-item-small {
   flex: 0 0 60%;
   max-width: 60%;
@@ -2344,6 +2390,10 @@ Center only the first reference-layout-section
   }
 
   .reference-images-row.center-video {
+    align-items: center;
+  }
+
+  .reference-images-row.center-download {
     align-items: center;
   }
 }

@@ -140,6 +140,21 @@ function closemenu(){
   sidemenu.style.right = "-400px";
 }
 
+// --------------------- Poster Hovering Mode ---------------------
+
+function openPosterLightbox() {
+    document.getElementById('poster-lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePosterLightbox() {
+    document.getElementById('poster-lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePosterLightbox();
+});
 
 
 
