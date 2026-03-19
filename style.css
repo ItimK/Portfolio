@@ -186,6 +186,20 @@ footer{
   left: 0px;
 }
 
+#portfolio {
+  padding-top: var(--after-header);
+}
+
+#portfolio #week-title {
+  padding-top: 0;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#portfolio .portfolios-container {
+  padding-top: 0; 
+}
+
 .portfolio-nav-wrapper {
   position: relative;
 }
