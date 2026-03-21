@@ -59,11 +59,11 @@
 <body>
     <section class="blog" id="blog-top">
         <div id="blog-title-container">
-            <h1 class="blog-title">Week 10 - Winter 2026 Summary</h1>
-            <h4 class="week-date">Mar 09 - 11, 2026</h4>
+            <h1 class="blog-title">Week 01 - Gaussian Splat with Particles Simulation</h1>
+            <h4 class="week-date">Mar 23 - 29, 2026</h4>
         </div>
 
-        <!-- -------------------------------- To-Do List -------------------------------- -->
+        <!-- -------------------------------- Plan -------------------------------- -->
         <div class="reference-section">
             <div id="week-title">
                 <h4 class="week-num">Spring Quarter 2026 Weekly Plan</h4>
@@ -131,6 +131,82 @@
                         <li><p class="blog-content">Project summarize and documentation</p></li>
                         <li><p class="blog-content">Plan for next step</p></li>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------- GS-Particles -------------------------------- -->        
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Gaussian Splat with Particles Simulation</h4>
+                <h4 class="week-detail">Use some data from Gaussian Splat, such as points position, color attribute and scale with particles simulation in Houdini</h4>
+                <h4 class="week-detail">Explore solutions for Gaussian Splat rendering in Houdini</h4>
+                <p class="blog-content">Rendering: Particles with Karma XPU, Gaussian Splat with V-Ray Houdini</p>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <iframe src="https://player.vimeo.com/video/1175764875?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    title="S26_VFX735_Mug"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Process</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_01Shape.png" alt="">
+                        <p class="blog-content">Create a proxy geometry for using as a velocity source</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_02Vel.png" alt="">
+                        <p class="blog-content">Use VEX code to create a spinning velocity from Normal attribute (@N)</p>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_03FinalVel.png" alt="">
+                        <p class="blog-content">Final velocity field: Combine spinning with noise and push-in vector (to prevent particles from expanding to wide)</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_04FormShape.png" alt="">
+                        <p class="blog-content">Inside POPNet, use POP Wrangle to force the particles to go back to their original position (mug shape)</p>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_05Mix.png" alt="">
+                        <p class="blog-content">Mix Gaussian Splat with normal particles by animating Alpha and scale attribute to make Gaussian Splat disappear when particles show and vice versa</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_06GSCache.png" alt="">
+                        <p class="blog-content">Cache out Gaussian Splat point to prepare for rendering</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_VFX735/VFX775_W01_07Vray.png" alt="">
+                        <p class="blog-content">Read simulated Gaussian Splat data back in with V-Ray Gaussian Splat node to render with V-Ray</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="week-title">
+                <h4 class="week-detail">V-Ray for Gaussian Splat Rendering</h4>
+            </div>
+            <div class="reference-column">
+                <div class="column-content">
+                    <li><p class="blog-content">Ray-traced: Splats are treated as semi-transparent geometry that light rays intersect</p></li>
+                    <li><p class="blog-content">Real shadows cast onto and from splats, real reflections/refractions with scene geometry</p></li>
+                    <li><p class="blog-content">Has Alpha channel</p></li>
+                    <li><p class="blog-content">Only supported in Render Operator context (ROP/Out) in Houdini, not Solaris</p></li>
                 </div>
             </div>
         </div>
