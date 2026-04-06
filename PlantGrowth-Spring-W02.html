@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD-GroupThesis-Spring-W02</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="home.html">Itim Kongsakulvatanasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="eufyMake.html">eufyMake UV Printer E1</a></li>
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="SU-57.html">SU-57 Modeling/Look Development</a></li>
+                                <li><a class="dropdown-list" href="match-to-live-action.html">Match To Live Action</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a class="active" href="Blog.html">Blog</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SCADxNYC.html">SCAD x NYC</a></li>
+                                <li><a class="dropdown-list" href="PlantGrowth.html">Special Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 02 - AI Style Transfer Tool for Texture Map</h1>
+            <h4 class="week-date">Mar 30 - Feb 05, 2026</h4>
+        </div>
+
+        <!-- -------------------------------- Soil creation -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">AI Style Transfer Tool for Texture Map</h4>
+                <h4 class="week-detail">Develop a stylization tool with AI integration to stylize texture maps</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W02_Ref.jpeg" alt="">
+                        <p class="blog-content">Style Reference</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W02_Original.png" alt="">
+                        <p class="blog-content">Original Texture</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W02_StylizedTex.png" alt="">
+                        <p class="blog-content">Stylized Texture</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- -------------------------------- Soil Animation -------------------------------- -->
+
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">GSplat Asset Deformation and Animation</h4>
+                <h4 class="week-detail">Deform and animate Gaussian Splats asset in Houdini using VEX code</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_03BudSetup.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Setup a collider</p>
+                </div>
+
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_04HoudiniResult.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Result in Houdini</p>
+                </div>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_01SoilDeformVEX.png" alt="">
+                    <p class="blog-content">VEX code for soil deformation</p>
+                </div>
+
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_02Node.png" alt="">
+                    <p class="blog-content">Nodes setup</p>
+                </div>
+            </div>
+
+        </div>   
+
+        <!-- -------------------------------- Soil creation -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Import Asset to Unreal Engine 5</h4>
+            </div>
+            
+            <div class="reference-layout-section">
+                <h4 class="week-detail">Use Postshot plugin to import animated asset (PLY sequence) into Unreal Engine 5</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <img src="Photos/VFX775/VFX775_W07_03PostShot.png" alt="">
+                    <p class="blog-content">Import PLY sequence into Postshot and save the project</p>
+                </div>
+
+                <div class="video-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX775/VFX775_W07_05SoilUnreal.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Test animation result in Unreal Engine 5</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
