@@ -196,6 +196,17 @@ footer{
   text-align: center;
 }
 
+.portfolio {
+  aspect-ratio: 16 / 9;
+}
+
+.portfolio .img,
+.portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops to fill, keeps consistent card size */
+}
+
 #portfolio .portfolios-container {
   padding-top: 0; 
 }
