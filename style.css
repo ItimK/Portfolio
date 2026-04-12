@@ -1719,6 +1719,7 @@ Center only the first reference-layout-section
 
 .grid-section .week-detail {
   text-align: center;
+  margin-top: 40px;
 }
 
 .grid-item {
