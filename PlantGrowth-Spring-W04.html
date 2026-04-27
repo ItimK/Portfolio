@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD-GroupThesis-Spring-W04</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="home.html">Itim Kongsakulvatanasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="eufyMake.html">eufyMake UV Printer E1</a></li>
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="SU-57.html">SU-57 Modeling/Look Development</a></li>
+                                <li><a class="dropdown-list" href="match-to-live-action.html">Match To Live Action</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a class="active" href="Blog.html">Blog</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SCADxNYC.html">SCAD x NYC</a></li>
+                                <li><a class="dropdown-list" href="PlantGrowth.html">Special Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 04 - Gaussian Splat with Particle and Pyro Simulation</h1>
+            <h4 class="week-date">Apr 13 - 19, 2026</h4>
+        </div>
+
+        <!-- -------------------------------- Relight GS with Normal Lights -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Particles Flow</h4>
+                <h4 class="week-detail">Create particles flow that contain Gaussian Splat Attribute</h4>
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Result</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_GSFlow.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Original Gaussian Splat Flow</p>
+                    </div>
+
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_GSFlow-Lit.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Relit Gaussian Splat</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Process</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_PyroFlow.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Use Pyro Simulation for velocity</p>
+                    </div>
+
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_ParticleFlow.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Apply the velocity from Pyro on particles with additional procedural Curl Noise</p>
+                    </div>
+                </div> 
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W04_05_CopyAttrs.png" alt="">
+                        <p class="blog-content">Copy necessary attributes from Gaussian Splat to the particles</p>
+                    </div>
+                    <div class="video-item">
+                    </div>
+                </div> 
+            </div>
+
+            <div id="week-title">
+                <h4 class="week-num">Particles Integration into a Statue</h4>
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Result</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_GSStatue.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Original Gaussian Splat Flow</p>
+                    </div>
+
+                    <div class="video-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W04_GSStatue-Lit.mp4" type="video/mp4">
+                        </video> 
+                        <p class="blog-content">Relit Gaussian Splat</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Process</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W04_01_Spin.png" alt="">
+                        <p class="blog-content">Use Cross Product to create a spining direction on Normal attribute (@N)</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W04_02_VolVOP.png" alt="">
+                        <p class="blog-content">Add noise and push-in force to the spining</p>
+                    </div>
+                </div> 
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W04_03_FinalVel.png" alt="">
+                        <p class="blog-content">Final Velocity</p>
+                    </div>
+
+                    <div class="video-item">
+                        <img src="Photos/S26_RSCH800/RSCH800_W04_04_Blend.png" alt="">
+                        <p class="blog-content">Create a fade-in effect by setting the Alpha and Scale attributes (@Alpha and v@scale) to 0, then increase them to their original value</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Result</h4>
+                <h4 class="week-detail">Work in progress for thesis previsualization</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <iframe src="https://player.vimeo.com/video/1186879051?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                    title="RSCH800_W04_Final"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
