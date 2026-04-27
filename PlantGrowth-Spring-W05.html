@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCAD-GroupThesis-Spring-W03</title>
+    <title>SCAD-GroupThesis-Spring-W05</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -59,15 +59,15 @@
 <body>
     <section class="blog" id="blog-top">
         <div id="blog-title-container">
-            <h1 class="blog-title">Week 03 - Relight GSplat with normal lights workaround</h1>
-            <h4 class="week-date">Apr 06 - 12, 2026</h4>
+            <h1 class="blog-title">Week 05 - Texture Maps Stylization</h1>
+            <h4 class="week-date">Apr 20 - 26, 2026</h4>
         </div>
 
         <!-- -------------------------------- Relight GS with Normal Lights -------------------------------- -->
         <div class="reference-section">
             <div id="week-title">
-                <h4 class="week-num">Relight GSplat with normal lights</h4>
-                <h4 class="week-detail">Develop a workaround solution for relighting Gaussian Splats without having to bake the lights into color attribute in Houdini</h4>
+                <h4 class="week-num">Texture Maps Stylization</h4>
+                <h4 class="week-detail">Create stylized version of texture from realistic original ones by using a custom AI Style Transfer Tool and Houdini COPNET</h4>
             </div>
 
             <div class="grid-section">
@@ -75,97 +75,93 @@
 
                 <div class="reference-images-row">
                     <div class="video-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W03_Relight01_Breakdown.mp4" type="video/mp4">
-                        </video> 
-                        <p class="blog-content">Create objects in obj level then use as a mesh light in Solaris</p>
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_01OriginalDirt.PNG" alt="">
+                            <p class="blog-content">Original Texture Map</p>
+                        </div>
                     </div>
 
                     <div class="video-item">
-                        <video autoplay loop muted playsinline>
-                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W03_Relight02_Breakdown.mp4" type="video/mp4">
-                        </video> 
-                        <p class="blog-content">Create objects in obj level then use as a mesh light in Solaris</p>
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_01OriginalDirt.PNG" alt="">
+                            <p class="blog-content">Style Reference</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_02AIDirt.png" alt="">
+                            <p class="blog-content">Output from AI Style Transfer Tool</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_03FinalDirt.png" alt="">
+                            <p class="blog-content">Output after adjusting colors in Houdini COPNET</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_04DirtHeight.png" alt="">
+                            <p class="blog-content">Height Map from Base Color</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_05OriginalGrass.PNG" alt="">
+                            <p class="blog-content">Original Texture Map</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_06AIGrass.png" alt="">
+                            <p class="blog-content">Style Reference</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_06AIGrass.png" alt="">
+                            <p class="blog-content">Output from AI Style Transfer Tool</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W05_07Scene-CU.png" alt="">
+                            <p class="blog-content">Integrating in the scene</p>
+                        </div>
                     </div>
                 </div>  
             </div>
 
             <div class="grid-section">
-                <h4 class="week-detail">Process</h4>
+                <h4 class="week-detail">Houdini Process</h4>
 
                 <div class="reference-images-row">
                     <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_01GSOrig.png" alt="">
-                        <p class="blog-content">Original Gaussian Splats</p>
+                        <img src="Photos/S26_RSCH800/RSCH800_W05_09AllNodes.png" alt="">
+                        <p class="blog-content">Node structure in COPNET</p>
                     </div>
 
                     <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_02VDBParticles.png" alt="">
-                        <p class="blog-content">Convert to VDB using VBD from Particles node</p>
+                        <img src="Photos/S26_RSCH800/RSCH800_W05_10BaseColor.png" alt="">
+                        <p class="blog-content">Create color ramp in wrangle node with VEX Code to adjust Base Color</p>
                     </div>
 
                     <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_03ConvertVBD.png" alt="">
-                        <p class="blog-content">Smooth the VBD and convert to polygon</p>
+                        <img src="Photos/S26_RSCH800/RSCH800_W05_11Height.png" alt="">
+                        <p class="blog-content">Use similar method to create Height Map</p>
                     </div>
                 </div>  
             </div>
 
-            <div class="reference-images-row">
-                <div class="reference-images-row">
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_04TransferP.png" alt="">
-                        <p class="blog-content">Project the polygon to the original points by using Attribute Transfer to transfer position from original Gaussian Splats points to the polygon</p>
-                    </div>
-
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_05SmoothP.png" alt="">
-                        <p class="blog-content">Smooth out the surface</p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="reference-images-row">
-                <div class="reference-images-row">
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_06Relax.png" alt="">
-                        <p class="blog-content">Use Relax node to bring the detail back</p>
-                    </div>
-
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_07Unlit.png" alt="">
-                        <p class="blog-content">Run VEX code on the original Gaussian Splats point to flatten the color, removing highlight and shadow</p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="reference-images-row">
-                <div class="reference-images-row">
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_08TransferCd.png" alt="">
-                        <p class="blog-content">Transfer flatten colors to the polygon</p>
-                    </div>
-
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_09Nodes.png" alt="">
-                        <p class="blog-content">Overall nodes structure</p>
-                    </div>
-                </div>  
-            </div>
-
-            <div class="reference-images-row">
-                <div class="reference-images-row">
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03_10DiffusePass.png" alt="">
-                        <p class="blog-content">Set up lighting on the geometry and render just combined Diffuse pass from Houdini Karma</p>
-                    </div>
-
-                    <div class="video-item">
-                        <img src="Photos/S26_RSCH800/RSCH800_W03__11Comp.png" alt="">
-                        <p class="blog-content">Compositing the lighting on unlit Gaussian Splats (rendering on V-Ray) in Nuke</p>
-                    </div>
-                </div>  
-            </div>
         </div>
 
     </section>
