@@ -1432,6 +1432,27 @@ Center only the first reference-layout-section
   margin-bottom: 60px;
 }
 
+.video-item--natural video {
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.natural-video-wrapper {
+  width: 100%;
+}
+
+.natural-video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.natural-video-wrapper p {
+  text-align: center;
+  padding-top: 20px;
+}
+
 .reference-columns {
   display: flex;
   gap: 100px;
@@ -1466,6 +1487,44 @@ Center only the first reference-layout-section
 .reference-images-row .ai-item p {
   text-align: center;
 }
+
+.natural-video-row {
+  padding-top: 30px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.natural-video-wrapper .column-content {
+  text-align: left;
+  padding-left: 0;
+}
+
+.natural-video-row .natural-video-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.natural-video-wrapper .column-content ul {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.natural-video-wrapper .column-content ul li {
+  text-align: left;
+}
+
+.natural-video-wrapper .column-content ul li p {
+  text-align: left;
+  display: inline;
+}
+
+.natural-video-wrapper .column-content .week-detail {
+  text-align: left;
+  margin-top: 0px;
+  padding-left: 40px;
+}
+
 
 /* Single video in a column - full width */
 .reference-images video:only-child {
