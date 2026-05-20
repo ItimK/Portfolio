@@ -1439,6 +1439,7 @@ Center only the first reference-layout-section
 
 .natural-video-wrapper {
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .natural-video-wrapper video {
