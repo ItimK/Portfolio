@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD-GroupThesis-Spring-W08</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="home.html">Itim Kongsakulvatanasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="eufyMake.html">eufyMake UV Printer E1</a></li>
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="SU-57.html">SU-57 Modeling/Look Development</a></li>
+                                <li><a class="dropdown-list" href="match-to-live-action.html">Match To Live Action</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a class="active" href="Blog.html">Blog</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SCADxNYC.html">SCAD x NYC</a></li>
+                                <li><a class="dropdown-list" href="PlantGrowth.html">Special Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 08 - Gaussian Splats with Simulation</h1>
+            <h4 class="week-date">May 11 - 17, 2026</h4>
+        </div>
+
+        <!-- -------------------------------- Final Result -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Final Result</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <iframe src="https://player.vimeo.com/video/1194596163?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    title="RSCH800_W08_13-All"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>  
+        </div>
+
+        <!-- -------------------------------- Gazebo -------------------------------- -->
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Process</h4>
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Gazebo</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_07-Gazebo_MaskSource.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create an object to use as a particles emitter mask source, then assign white color to it using Color node</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_08-Gazebo_Mask.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Apply Attribute Transfer node transfer color Attribute (@Cd) from the source to the main object (the gazebo)</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                         <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W08_Gazebo_Group.png" alt="">
+                            <p class="blog-content">Use Retime node to copy and delay the animation to create another mask that will be combine with the original one</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_09-Gazebo_Group.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Group points based on masks to limit the area of emission</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_09-Gazebo_Pyro.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create multiple pyro simulations from Axiom plugin in Houdini</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_09-Gazebo_Velocity.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Velocity from pyro simulations</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_10-Gazebo_GS.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">First layer of the effect: Animate scale (v@scale) of the Gaussian Splat based on the mask</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W08_Gazebo_Group.png" alt="">
+                            <p class="blog-content">Velocity from pyro simulations</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_11-Gazebo_Particles.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Add particles from Gaussian Splat</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_12-Gazebo_All.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Final Result</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="grid-section">
+                <h4 class="week-detail">Statue</h4>
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W08_Statue_SourceMask.png" alt="">
+                            <p class="blog-content">Create a point using Add node to be a starting point of a mask for particles emission</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_01-Mask.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Add particles from Gaussian Splat</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_02-Group.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create group to emit particles using the same method as the gazebo</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_03-Statue_Pyro.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create pyro simulation to drive particles velocity</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <img src="Photos/S26_RSCH800/RSCH800_W08_Statue_Vel.png" alt="">
+                            <p class="blog-content">Velocity Field</p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="reference-images-row">
+                    <div class="video-item">
+                        <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_03-Statue_GS.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Add particles from Gaussian Splat</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_05-Statue_Particles.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create group to emit particles using the same method as the gazebo</p>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                         <div class="video-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/S26_VFX735/RSCH800_W08_06-Statue_Final.mp4" type="video/mp4">
+                            </video> 
+                            <p class="blog-content">Create group to emit particles using the same method as the gazebo</p>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
