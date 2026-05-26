@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD-GroupThesis-Spring-W08</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="home.html">Itim Kongsakulvatanasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="eufyMake.html">eufyMake UV Printer E1</a></li>
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="SU-57.html">SU-57 Modeling/Look Development</a></li>
+                                <li><a class="dropdown-list" href="match-to-live-action.html">Match To Live Action</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a class="active" href="Blog.html">Blog</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SCADxNYC.html">SCAD x NYC</a></li>
+                                <li><a class="dropdown-list" href="PlantGrowth.html">Special Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 09 - Finishing Gaussian Splats with Simulation</h1>
+            <h4 class="week-date">May 18 - 24, 2026</h4>
+        </div>
+
+        <!-- -------------------------------- Final Result -------------------------------- -->
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Final Result</h4>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="video-item">
+                    <iframe src="https://player.vimeo.com/video/1195672911?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    title="RSCH800_W09_GS-FX"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>  
+        </div>
+
+        <!-- -------------------------------- Challenges -------------------------------- -->
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Challenges</h4>
+            </div>
+
+                         
+            <div class="reference-column">
+                <div class="column-content">
+                    <h4 class="week-detail">Gaussian Splat scale randomly got big</h4>
+                    <li><p class="blog-content"><strong>Cause:</strong> When scale attribute (v@scale) is 0, sometimes it will be replaced with other random value</p></li>
+                    <li><p class="blog-content"><strong>Solution:</strong> Assign very small value to the scale and set Alpha attribute to 0 to make the splats disappear</p></li>
+                </div>
+                <div class="column-content">
+                    <h4 class="week-detail">Big file size</h4>
+                    <li><p class="blog-content">Gaussian Splats require multiple attributes to render so .ply file can be big (around 1GB per frame in this case)</p></li>
+                </div>
+                <div class="column-content">
+                    <h4 class="week-detail">Some splats are missing when trying to display large number of splats in the scene </h4>
+                    <li><p class="blog-content">Viewport could only display limited number of splat. If it's over the limit, some splats will disappear</p></li>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook<h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
