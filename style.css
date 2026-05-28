@@ -1432,6 +1432,69 @@ Center only the first reference-layout-section
   margin-bottom: 60px;
 }
 
+.reference-images-row.center-download {
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.reference-section .text-content-list .text-content a,
+.reference-section-white .text-content-list .text-content a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.reference-section .text-content-list .text-content a:hover,
+.reference-section-white .text-content-list .text-content a:hover {
+  text-decoration: underline;
+}
+
+.reference-section .week-detail + .text-content-list,
+.reference-section-white .week-detail + .text-content-list {
+  margin-top: 0px;
+}
+
+.reference-section .text-content-list li,
+.reference-section-white .text-content-list li {
+  padding-bottom: 0px;
+}
+
+.reference-section .week-detail,
+.reference-section-white .week-detail {
+  line-height: 1;
+}
+
+.reference-section .text-content-list + .week-detail,
+.reference-section-white .text-content-list + .week-detail {
+  margin-top: 25px;
+}
+
+.blog-right-column + .blog-right-column {
+  margin-top: 25px;
+}
+
+#tree-growth .reference-images-row {
+  margin-bottom: 0;
+}
+
+#tree-growth .natural-video-row {
+  padding-top: 0;
+}
+
+#tree-growth .video-item p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#tree-growth .natural-video-wrapper {
+  padding-bottom: 0;
+}
+
+#gsplat-relighting .reference-images-row {
+  margin-bottom: 100px;
+}
+
 .video-item--natural video {
   height: auto !important;
   object-fit: contain !important;
