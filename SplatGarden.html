@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arnold Settings Capture Tool</title>
+    <title>SplatGarden</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
     <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
 </head>
@@ -60,48 +60,98 @@
 <body>
     <section id="work-area">
         <div id="video-wrapper">
-            <div class="image-container">
-                <img src="Photos/ArnoldSettingsCapture.png" alt="">
-            </div>
-
-            <div class="breakdown">
-                <h3>Demo</h3>
+            <div class="reference-images-row center-download" style="justify-content: center;">
+                <div>
+                    <a class="btn2 resume-btn" href="https://splatgarden.com/" download>Try Splat Garden</a>
+                </div>
             </div>
 
             <div class="work-video-container">
-                <iframe src="https://player.vimeo.com/video/1138550836?h=c047d31636&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;muted=1" 
+                <iframe src="https://player.vimeo.com/video/1224447352?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                title="ArnoldSettingCapture_Demo"></iframe>
+                title="SplatGarden_Teaser"></iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
+
+            <div class="breakdown">
+                <h3>Splat Garden Demo</h3>
+            </div>
+
+            <div class="work-video-container">
+                <iframe src="https://player.vimeo.com/video/1224447362?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                title="SplatGarden_LiveDemo_Speedup"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+
         </div>
 
         <div class="work-BG">
             <div class="work-text-wrapper">
-                <h3 class="work-title">Arnold Settings Capture Tool</h3>
-                <p class="work-date">November, 2025</p>
-                <p class="text-title">Purpose</p>
+                <h3 class="work-title">Splat Garden</h3>
+                <p class="work-date">Collaborative project</p>
+
+                <div class="siggraph-credit">
+                    <p class="text-content">Presented at SIGGRAPH Conference 2026, Birds of a Feather Session:</p>
+                    <p class="text-content"><a href="https://vis-bof.matters.today/s2026.html">Immersive Visualisation for Science, Research, Art, Simulation and Digital Twins Applications</a></p>
+                </div>
+               
+                <p class="work-date">January - May, 2026</p>
+
+                <p class="text-title">About this project</p>
                 <p class="text-content"
-                    >Developed a production pipeline tool for Autodesk Maya to address the time-consuming and error-prone process of 
-                    manually documenting and comparing Arnold render settings across multiple iterations. 
-                    This tool automates the entire process by directly querying Arnold's render node to extract 
-                    technical parameters (sampling values, ray depths, and rendering configurations) 
-                    and embedding them as formatted text overlays on rendered images. </p>
+                    >Splat Garden is a living, collaborative portfolio showcase where the medium is the work. It's a browser-based Gaussian Splat viewer spanning four pillars:
+                    AI Tools, Simulation, 3DGS, and Interaction. The environment was built in Unreal Engine, authored with custom AI-stylized textures and dressed with Houdini-driven Pyro and particle simulations,
+                    then captured and deployed as a 3D Gaussian Splat, this technique lets real-world-quality scenes run smoothly on the web.
+                    The garden's hero flowers, daffodils and grape hyacinths, are created procedurally in Houdini with 
+                    custom plant growth tools so they can be interacted with in real-time in Unreal Engine. In the browser, real-time hand-tracking via webcam lets you navigate the scene and trigger effects with your hand.</p>
+ 
                 <p class="text-title">Key Features</p>
-                <p class="text-content"
-                    >The installer will first automatically detect whether the required Pillow library is present 
-                    and seamlessly installs it in the background if missing, eliminating manual setup steps for end users.
-                    Tool's features include a guided session mode that captures settings across multiple renders with 
-                    automatic sequential numbering, a batch processor that generates comparison grids
-                    and an integrated file manager for cleaning up snapshot files and their associated JSON data.</p>
-                <p class="software">Python | Maya | Arnold</p>
+                <ul class="text-content-list">
+                    <li class="text-content">Displays technical breakdown of every asset in the scene</li>
+                    <li class="text-content">Hand-tracking via webcam to navigate navigate the scene and trigger effects with your hand(s) gesture</li>
+                    <li class="text-content">Customizes the scene with painterly style, voxelized or point cloud mode</li>
+                </ul>
+                
+                <p class="text-title">Role & Responsibilities</p>
+                <ul class="text-content-list">
+                    <li class="text-content">Research about Gaussian Splat with FX simulation in Houdini</li>
+                    <li class="text-content">Final look of Gaussian Splat FX of the gazebo and statue</li>
+                    <li class="text-content">Developing a custom AI-Stylization tool for stylized textures</li>
+                </ul>
+
+                <p class="text-title">Team Members</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><a href="https://www.linkedin.com/in/dancishen/">Danci Shen</a> - Interactive, Unreal Engine TD and Virtual Production</li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/yiyi-long-230120153/">Yiyi Long</a> - Scene Layout and Asset Creation (Daffodil)</li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/yiqi-zheng-399a992a9/">Yiqi Zheng</a> - VAT/USD and Grape Hyacinth Textures</li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/yichen1999/">Yichen Shi</a> - Asset Creation (Grape Hyacinth) and Houdini Effects Simulation </li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/benjamin-jones-a6a233255/">Ben Jones</a> - Virtual Production and Environment Assets</li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/xinyi-liang-9b8974349/">Xinyi Liang</a> - Environment Assets</li>
+                    <li class="text-content"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/">Itim Kongsakulvatanasook</a> - AI Stylization Tool and Gaussian Splat with Simulation in Houdini</li>
+                </ul>
+
+                <p class="text-title">Supervising Faculty</p>
+                <ul class="text-content-list">
+                    <li class="text-content"><a href="https://www.linkedin.com/in/deborahrfowler/">Dr. Deborah R. Fowler</a> - Visual Effects Professor, SCAD</li>
+                </ul>
+
+                <p class="software">Unreal Engine | Houdini | Gaussian Splat | USD | AI Tools | HP AI Studio | Postshot | LichtFeld Studio</p>
+
+                <div id="download-resume-container" class="work-info-btn">
+                    <div>
+                        <a class="btn2 resume-btn" href="PlantGrowth.html">More Information</a>
+                    </div>
+                </div>
+
+                
             </div>
 
             <div class="next-back-wrapper">
-                <a href="winterScatter-tool.html">
+                <a href="woodland-grave.html">
                     <button class="btn3"><i class="fa-solid fa-angle-left"></i></button>
                 </a>
-                <a href="silent-helper.html">
+                <a href="eufyMake.html">
                     <button class="btn3"><i class="fa-solid fa-angle-right"></i></button>
                 </a>                
             </div>

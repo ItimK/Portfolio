@@ -437,6 +437,27 @@ footer{
   color: #969490;
   margin: 0;  
 }
+.siggraph-credit {
+  padding-bottom: 30px;
+}
+
+.siggraph-credit .text-content {
+    padding: 0;
+}
+
+.siggraph-credit .text-content:not(:last-child) {
+    padding-bottom: 4px;
+}
+
+.siggraph-credit a {
+    font-weight: 500;
+    color:#000;
+    text-decoration: none;
+}
+
+.siggraph-credit a:hover {
+  text-decoration: underline;
+}
 
 /* Footer ------------------------ */
 #scroll-up{
