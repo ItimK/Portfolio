@@ -1462,16 +1462,16 @@ Center only the first reference-layout-section
   margin-bottom: 3rem;
 }
 
-.reference-section .text-content-list .text-content a,
-.reference-section-white .text-content-list .text-content a {
+.blog-content a,
+.text-content a {
   color: #222;
   font-weight: 500;
   text-decoration: none;
   transition: text-decoration 0.2s ease;
 }
 
-.reference-section .text-content-list .text-content a:hover,
-.reference-section-white .text-content-list .text-content a:hover {
+.blog-content a:hover,
+.text-content a:hover {
   text-decoration: underline;
 }
 
