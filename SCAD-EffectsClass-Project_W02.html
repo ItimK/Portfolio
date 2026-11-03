@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD-EffectClass-Project_W02</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to css file -->
+    <script src="https://kit.fontawesome.com/c8ecb98d52.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <section id="header-all">
+        <div id="header" class="header-page">
+            <a href="home.html">Itim Kongsakulvatanasook</a>
+            <div>
+                <ul id="nav-bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Demo Reel</a></li>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a href="Portfolio.html">Portfolio</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SplatGarden.html">Splat Garden</a></li>
+                                <li><a class="dropdown-list" href="eufyMake.html">eufyMake UV Printer E1</a></li>
+                                <li><a class="dropdown-list" href="marble-temple.html">The Marble Temple</a></li>
+                                <li><a class="dropdown-list" href="chocolate-shop.html">Chocolate Shop</a></li>
+                                <li><a class="dropdown-list" href="waterdrop-automaton.html">Water Drop Automaton</a></li>
+                                <li><a class="dropdown-list" href="Match-tone.html">Matching Elements of Mood</a></li>
+                                <li><a class="dropdown-list" href="SU-57.html">SU-57 Modeling/Look Development</a></li>
+                                <li><a class="dropdown-list" href="match-to-live-action.html">Match To Live Action</a></li>
+                                <li><a class="dropdown-list" href="ai-style-transfer.html">AI Style Transfer Tools</a></li>
+                                <li><a class="dropdown-list" href="winterScatter-tool.html">WinterScatter Tool</a></li>
+                                <li><a class="dropdown-list" href="arnold-settings-capture.html">Arnold Settings Capture Tool</a></li>
+                                <li><a class="dropdown-list" href="silent-helper.html">The Silent Helper</a></li>
+                                <li><a class="dropdown-list" href="woodland-grave.html">The Woodland Grave</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-nav-wrapper">
+                        <li class="portfolio-nav"><a class="active" href="Blog.html">Blog</a></li>
+                        <div id="dropdown-wrapper">
+                            <div class="triangle"></div>
+                            <ul id="dropdown-menu">
+                                <li><a class="dropdown-list" href="SCADxNYC.html">SCAD x NYC</a></li>
+                                <li><a class="dropdown-list" href="SplatGardenBlog.html">Special Project</a></li>
+                                <li><a class="dropdown-list" href="SCAD-EffectsClass-Project.html">Effects Class Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </section>
+</header>
+
+<body>
+    <section class="blog" id="blog-top">
+        <div id="blog-title-container">
+            <h1 class="blog-title">Week 02 - Continue Simulation Test | Explosion Look Development</h1>
+            <h4 class="week-date">Nov 3 - Nov 29, 2026</h4>
+        </div>
+
+        <!-- ------------------------ Reference ----------------------- -->
+        
+        <div class="reference-section">
+            <div id="week-title">
+                <h4 class="week-num">Simulation Test Process</h4>
+                <h4 class="week-detail">Exploring how to get the explosion motion to match the reference</h4>
+            </div>
+
+            <div class="column-content">
+                <li><p class="blog-content">Use separate Pyro Burst Sources with different durations to drive density, divergence, velocity and burn, and influence and influenceVel
+                    (Axiom native attributes to control how velocity field would behave).
+                </p></li>
+                <li><p class="blog-content">To create influence and influenceVel attributes, rename density to influence and v to influenceVel</p></li>
+            </div>
+
+            <div class="reference-images-row">
+                <div class="ai-item">
+                    <img src="Photos/VFX728/W02/VFX728_Project_W02-01_SourceNodes.png" alt="Input 1">
+                    <p class="blog-content">Source node structure</p>
+                </div>
+
+                <div class="ai-item">
+                    <img src="Photos/VFX728/W02/VFX728_Project_W02-02-AdjustVel.png" alt="Input 1">
+                    <p class="blog-content">Use VEX to adjust velocity attribute</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------- Process -------------------------------- -->
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">Explosion Look Development</h4>
+                <h4 class="week-detail">Use Pyro Bake Volume for preliminary test and fast iteration</h4>
+            </div>
+            
+            <div class="reference-images-row">
+                <div class="ai-item">
+                    <img src="Photos/VFX728/W02/VFX728_Project_W02-03-ShadingSmoke.png" alt="Input 1">
+                    <p class="blog-content">Smoke Settings</p>
+                </div>
+
+                <div class="ai-item">
+                    <img src="Photos/VFX728/W02/VFX728_Project_W02-04-ShadingScatter.png" alt="Input 1">
+                    <p class="blog-content">Scatter Settings</p>
+                </div>
+
+                <div class="ai-item">
+                    <img src="Photos/VFX728/W02/VFX728_Project_W02-05-ShadingFire.png" alt="Input 1">
+                    <p class="blog-content">Fire Settings</p>
+                </div>
+            </div>
+
+            <div class="column-content">
+                <div id="week-title">
+                    <h4 class="week-detail">Result, compared with the reference</h4>
+                </div>
+            </div>
+            
+            <div class="reference-images-row">
+                <div class="ai-item">
+                    <video autoplay loop muted playsinline>
+                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_W08_01.mp4" type="video/mp4">
+                    </video>
+                    <p class="blog-content">Needs to add two more explosions</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ------------------------ Todo ----------------------- -->
+
+        <div class="blog-content-section" id="tree-growth">
+            <div id="week-title">
+                <h4 class="week-num">To-Do</h4>
+            </div>
+
+            <div class="reference-columns">                    
+                <div class="reference-column">
+                    <div class="column-content">
+                        <li><p class="blog-content">Refine movement of the main explosion to match the Reference</p></li>
+                        <li><p class="blog-content">Refine explosion's look</p></li>
+                        <li><p class="blog-content">Create shockwave</p></li>
+                        <li><p class="blog-content">Create small bursts around the main explosion using Pyro in COPs</p></li>
+                        <li><p class="blog-content">Use ZibraVDB to optimize the simulations</p></li>
+                    </div>
+                    <div class="column-content">
+                        <h4 class="week-detail">Wishlist</h4>
+                        <li><p class="blog-content">Compositing: Integrate the explosion into a live-action plate</p></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+<div id="scroll-up">
+  <a href="#blog-top" title="Back to Top">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+</div>  
+ 
+<footer id="footer">
+    <div id="footer-icon">
+        <button class="footer-btn"><a href="https://www.linkedin.com/in/itim-kongsakulvatanasook/"><i class="fa-brands fa-linkedin-in"></i></a></button>
+        <button class="footer-btn"><a href="mailto:mkongs20@student.scad.edu"><i class="fa-solid fa-envelope"></i></a></button>
+    </div>
+    <div id="footer-name">
+        <h5>Itim Kongsakulvatanasook</h5>
+    </div>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
