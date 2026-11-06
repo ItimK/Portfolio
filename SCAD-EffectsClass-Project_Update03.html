@@ -61,77 +61,87 @@
 <body>
     <section class="blog" id="blog-top">
         <div id="blog-title-container">
-            <h1 class="blog-title">Week 02 - Continue Simulation Test | Explosion Look Development</h1>
-            <h4 class="week-date">Nov 3 - Nov 9, 2026</h4>
+            <h1 class="blog-title">Week 03 - Refine The Main Explosions</h1>
+            <h4 class="week-date">Nov 5, 2026</h4>
         </div>
 
         <!-- ------------------------ Reference ----------------------- -->
         
         <div class="reference-section">
             <div id="week-title">
-                <h4 class="week-num">Simulation Test Process</h4>
-                <h4 class="week-detail">Exploring how to get the explosion motion to match the reference</h4>
+                <h4 class="week-num">Refine The Main Explosions</h4>
             </div>
 
             <div class="column-content">
-                <li><p class="blog-content">Use separate Pyro Burst Sources with different durations to drive density, divergence, velocity and burn, and influence and influenceVel
-                    (Axiom-native attributes that control how the velocity field behaves).
-                </p></li>
-                <li><p class="blog-content">To create influence and influenceVel attributes, rename density to influence and v to influenceVel</p></li>
+                <li><p class="blog-content">Added 2 more explosions to match the reference</p></li>
+                <li><p class="blog-content">Adjust the motion and the shape of the explosion</p></li>
             </div>
 
-            <div class="reference-images-row">
-                <div class="ai-item">
-                    <img src="Photos/VFX728/W02/VFX728_Project_W02-01_SourceNodes.png" alt="Input 1">
-                    <p class="blog-content">Source node structure</p>
-                </div>
+            <div class="grid-section">
+                <h4 class="week-detail">Result</h4>
 
-                <div class="ai-item">
-                    <img src="Photos/VFX728/W02/VFX728_Project_W02-02-AdjustVel.png" alt="Input 1">
-                    <p class="blog-content">Use VEX to adjust velocity attribute</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- -------------------------------- Process -------------------------------- -->
-        <div class="blog-content-section" id="tree-growth">
-            <div id="week-title">
-                <h4 class="week-num">Explosion Look Development</h4>
-                <h4 class="week-detail">Use Pyro Bake Volume for preliminary test and fast iteration</h4>
-            </div>
-            
-            <div class="reference-images-row">
-                <div class="ai-item">
-                    <img src="Photos/VFX728/W02/VFX728_Project_W02-03-ShadingSmoke.png" alt="Input 1">
-                    <p class="blog-content">Smoke Settings</p>
-                </div>
-
-                <div class="ai-item">
-                    <img src="Photos/VFX728/W02/VFX728_Project_W02-04-ShadingScatter.png" alt="Input 1">
-                    <p class="blog-content">Scatter Settings</p>
-                </div>
-
-                <div class="ai-item">
-                    <img src="Photos/VFX728/W02/VFX728_Project_W02-05-ShadingFire.png" alt="Input 1">
-                    <p class="blog-content">Fire Settings</p>
-                </div>
+                <div class="reference-images-row">
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Compare.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>  
             </div>
 
-            <div class="column-content">
-                <div id="week-title">
-                    <h4 class="week-detail">Result, compared with the reference</h4>
-                </div>
-            </div>
-            
-            <div class="reference-images-row">
-                <div class="ai-item">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_W08_01.mp4" type="video/mp4">
-                    </video>
-                    <p class="blog-content">Needs two more explosions</p>
-                </div>
+            <div class="grid-section">
+                <h4 class="week-detail">Sources for the 3 main explosions</h4>
+
+                <div class="reference-images-row">
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Source_01.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">Source 1 for the middle explosion</p>
+                    </div>
+
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Source_02.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">Source 2 for the right explosion</p>
+                    </div>
+
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Source_03.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">Source 3 for the left explosion</p>
+                    </div>
+                </div>  
             </div>
 
+            <div class="grid-section">
+                <h4 class="week-detail">Each explosion</h4>
+
+                <div class="reference-images-row">
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Explosion_01.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">The middle explosion</p>
+                    </div>
+
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Explosion_02.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">The right explosion</p>
+                    </div>
+
+                    <div class="ai-item">
+                        <video autoplay loop muted playsinline>
+                            <source src="https://pub-e1b6174ab96b483fac33c4dd503ce079.r2.dev/VFX728/VFX728_Project_Update-03_Explosion_03.mp4" type="video/mp4">
+                        </video>
+                        <p class="blog-content">The left explosion</p>
+                    </div>
+                </div>  
+            </div>
         </div>
 
         <!-- ------------------------ Todo ----------------------- -->
@@ -147,7 +157,7 @@
                         <li><p class="blog-content">Refine movement of the main explosion to match the Reference</p></li>
                         <li><p class="blog-content">Refine explosion's look</p></li>
                         <li><p class="blog-content">Create shockwave</p></li>
-                        <li><p class="blog-content">Create small bursts around the main explosion using Pyro in COPs</p></li>
+                        <li><p class="blog-content">Create small bursts around the main explosion</p></li>
                         <li><p class="blog-content">Use ZibraVDB to optimize the simulations</p></li>
                     </div>
                     <div class="column-content">
